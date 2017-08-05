@@ -147,12 +147,14 @@ p{
 }
 .translation{
     position: absolute;
-    top:130;
-    left: -100;
+    top:150;
+    left:0;
     width: auto;
     height: 80%;
     opacity: 0.1;
+    object-fit: cover;
     max-width: 100%;
+    
     
 }
 
