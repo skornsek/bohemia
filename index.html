@@ -17,12 +17,24 @@
     <meta charset="utf-8" />
 </head>
 
-<body class="fp-responsive">
+<body>
+    <div class="scrollicon">
+        <span class="scroll-btn">
+	<a href="#">
+		<span class="mouse">
+			<span>
+			</span>
+        </span>
+        </a>
+        <p>scroll me</p>
+
+        </span>
+    </div>
     <div class="glava hide-on-med-and-down">
         <section class="section section--menu" id="Ferdinand">
 
             <span class="link-copy"></span>
-            <nav class="menu menu--ferdinand">
+            <nav class="menu menu--ferdinand hide">
                 <ul class="menu__list" id="menu">
 
                     <li data-menuanchor="secondPage" class="menu__item "><a href="#secondPage" class="menu__link">O NAS</a></li>
@@ -36,7 +48,7 @@
         </section>
 
 
-        <nav id="jezikimenu" class="menu menu--ferdinand">
+        <nav id="jezikimenu" class="menu menu--ferdinand hide">
             <ul class="menu__list">
                 <li class="menu__item menu__item--current"><a class="menu__link">SL</a></li>
                 <li class="menu__item"><a class="menu__link">CZ</a></li>
@@ -80,29 +92,19 @@
     </nav> -->
 
     <div id="fullpage">
-        <div class="section">
-            <div class="container">
-                <div class="logo">
-                    <img src="img/Bohemia_logo.svg" alt="">
-                </div>
-                <div class=".show-on-medium-and-down hide-on-large-only mobilescrollinfo">
-                    <a class="mouse-scroll" href="#!"> 
-                            <span class="mouse">
-                                <span class="mouse-movement"> 
-                                </span>
-                            </span>
-                            <span class="mouse-message fadeIn">scroll</span> 
-                    </a>
-                    <nav id="jezikimenumobile" class="menu menu--ferdinand">
-                        <ul class="menu__list">
-                            <li class="menu__item menu__item--current"><a class="menu__link">SL</a></li>
-                            <li class="menu__item"><a class="menu__link">CZ</a></li>
-                            <li class="menu__item"><a class="menu__link">EN</a></li>
-                        </ul>
 
-                    </nav>
+        <div id="bgmove" class="section">
+            <div class="logo">
+                <img src="img/Bohemia_logo.svg" alt="">
+            </div>
+            <div data-ibg-bg="img/Pattern1.svg" class="bg">
+
+                <div class="bg2 bglayer2">
+                    <div class="vzorec2"></div>
+
 
                 </div>
+
             </div>
         </div>
         <div class="section svetlomodra">
@@ -113,7 +115,7 @@
                     kakovostne in ugodne storitve prevajanja in tolmačenja. Sodelujemo z rojenimi govorci in strokovnjaki
                     posameznih področij prevajanja.
                 </p>
-                <img class="translation" src="img/translation.svg" alt="">
+                <img class="translation" src="img/onas.svg" alt="">
             </div>
         </div>
         <div class="section bela" id="ponudba">
@@ -121,12 +123,23 @@
             <p>Nudimo prevode z najrazličnejših področij v sledečih jezikovnih kombinacijah</p>
             <div class="crtaV"></div>
             <div class="ponudba">
-                <img class="ponudbe" src="img/SloBox.svg" alt="">
-                <img class="ponudbe" src="img/AngBox.svg" alt="">
-                <img class="ponudbe" src="img/PolBox.svg" alt="">
+                <img class="ponudbe" src="img/slo.svg" alt="">
+                <img class="ponudbe" src="img/ang.svg" alt="">
+                <img class="ponudbe" src="img/pol.svg" alt="">
             </div>
         </div>
-        <div class="section">test 4</div>
+        <div class="section">
+            <div class="container">
+                <div class="povprasevanje">
+                    <h1>POŠLJITE <br>POVPRAŠEVANJE</h1>
+                    <input placeholder="Ime in Priimek" type="text">
+                    <input placeholder="E-mail" type="email">
+                    <textarea placeholder="Sporočilo" name="" id="" cols="30" rows="10"></textarea>
+
+                </div>
+            </div>
+            <img class="posta" src="img/Posta.svg" alt="">
+        </div>
         <div class="section">test 5</div>
         <div class="section">test 6</div>
     </div>
@@ -140,7 +153,13 @@
     <script type="text/javascript" src="js/jqueryfullPage.js"></script>
     <script type="text/javascript" src="js/classie.js"></script>
     <script type="text/javascript" src="js/modernizr-custom.js"></script>
+    <script type="text/javascript" src="js/jquery.interactive_bg.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
 
+
+    <script>
+
+    </script>
     <!-- <script>
         function myFunction() {
             var x = document.getElementById("myTopnav");
@@ -154,10 +173,36 @@
     </script> -->
     <script>
         $(document).ready(function () {
-            $(".button-collapse").sideNav({
-                closeOnClick: true,
+            // $(".button-collapse").sideNav({
+            //     closeOnClick: true,
 
+            // });
+            $(".bg").interactive_bg({
+                strength: 50,              // Movement Strength when the cursor is moved. The higher, the faster it will reacts to your cursor. The default value is 25.
+                scale: 1.00,               // The scale in which the background will be zoomed when hovering. Change this to 1 to stop scaling. The default value is 1.05.
+                animationSpeed: "1s",   // The time it takes for the scale to animate. This accepts CSS3 time function such as "100ms", "2.5s", etc. The default value is "100ms".
+                contain: true,             // This option will prevent the scaled object/background from spilling out of its container. Keep this true for interactive background. Set it to false if you want to make an interactive object instead of a background. The default value is true.
+                wrapContent: true         // This option let you choose whether you want everything inside to reacts to your cursor, or just the background. Toggle it to true to have every elements inside reacts the same way. The default value is false
             });
+
+            $(".bg2").interactive_bg({
+                strength: 100,              // Movement Strength when the cursor is moved. The higher, the faster it will reacts to your cursor. The default value is 25.
+                scale: 1.00,               // The scale in which the background will be zoomed when hovering. Change this to 1 to stop scaling. The default value is 1.05.
+                animationSpeed: "2s",   // The time it takes for the scale to animate. This accepts CSS3 time function such as "100ms", "2.5s", etc. The default value is "100ms".
+                contain: true,             // This option will prevent the scaled object/background from spilling out of its container. Keep this true for interactive background. Set it to false if you want to make an interactive object instead of a background. The default value is true.
+                wrapContent: true        // This option let you choose whether you want everything inside to reacts to your cursor, or just the background. Toggle it to true to have every elements inside reacts the same way. The default value is false
+            });
+
+        })
+        $(window).resize(function () {
+            $(".bg > .ibg-bg").css({
+                width: $(window).outerWidth(),
+                height: $(window).outerHeight()
+            })
+            $(".bg2 > .ibg-bg").css({
+                width: $(window).outerWidth(),
+                height: $(window).outerHeight()
+            })
         })
     </script>
     <script>
@@ -168,9 +213,32 @@
                 $('#fullpage').fullpage({
                     anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', '6thpage', '7thpage', 'lastPage'],
                     menu: '#menu',
+                    onLeave: function (index, nextIndex, direction) {
+                        var leavingSection = $(this);
+                        var t = TweenLite.to(".glava", 0.5, { height: 0, paused: true, reversed: true });
+                        //after leaving section 1
+                        if (index == 1 && direction == 'down') {
+                            $('.glava').animate({
+                                height: '100px'
+                            });
+                            $('nav').fadeIn("slow").removeClass('hide');
+                            $('.scrollicon').fadeOut("slow").addClass('hide');
 
 
 
+                        }
+
+                        else if (index == 2 && direction == 'up') {
+                            $('.glava').animate({
+                                height: '0px'
+                            });
+                            $('nav').fadeOut("slow").addClass('hide');
+
+                            $('.scrollicon').fadeIn("slow").removeClass('hide');
+
+                        }
+
+                    }
                 });
             }
             else {
@@ -181,7 +249,7 @@
                     fitToSection: false,
                     hybrid: true,
                     responsiveWidth: 900,
-                    autoScrolling:false,
+                    autoScrolling: false,
 
 
 

@@ -12,12 +12,13 @@ p{
 }
 .glava{
     background-color: #002837;
-    height: 100px;
+    height: 0px;
     z-index: 70;
     position: fixed;
     top:0;
     left:0;
-    right: 0
+    right: 0;
+
 }
 .glavatelefon{
     position: fixed;
@@ -77,19 +78,34 @@ p{
         width: 80%;
         margin: 0 auto;
 }
+ 
 .logo{
-    
-    width:30%;
-    margin:auto;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 400px;
+   height: 400px;
+   margin-top: -200px; /* Half the height */
+   margin-left: -200px; /* Half the width */
 }
+.scrollicon{
+    position: absolute;
+    bottom: 150;
+    left: 50%;
+
+}
+
+
 
  /* #fullpage{
     top:-80;
 }  */
 .crtaV{
-    background-color: #6829C1;
+    background-color: #4B88A2;
     height: 7px;
     border-radius: 6px;
+    position: relative;
+    z-index: 1;
 
 }
 .svetlomodra{
@@ -102,6 +118,8 @@ p{
     font-size: 8em; 
     text-align: center;
     margin: 0px;
+    position: relative;
+    z-index: 1;
 }
 
 .svetlomodra p{
@@ -131,6 +149,7 @@ p{
     text-align: center;
     margin: 40px auto;
     width: 25%;
+    font-size: 1.3em;
 }
 .bela .crtaV{
     width: 8%;
@@ -148,14 +167,46 @@ p{
 .translation{
     position: absolute;
     top:150;
-    left:0;
+    left:-100;
     width: auto;
     height: 80%;
-    opacity: 0.1;
+    opacity: 0.3;
     object-fit: cover;
     max-width: 100%;
     
-    
+}
+.posta{
+    height: 30%;
+    position: absolute;
+    margin-top: -150px;
+    top: 50%;
+    left: 0;
+
+}
+.bg{
+
+    background: center center / auto no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.bg2{
+    background: center center / cover no-repeat;
+    height: 100%;
+    width: 100%;
+
+
+}
+.bglayer2{
+
+}
+.vzorec2{
+    width:100%; 
+    height:100%; 
+    background:url(pattern2+.svg) center center no-repeat;
+
 }
 
 /*media*/
@@ -211,108 +262,168 @@ p{
 
 /*scrollicon*/
 
-@-webkit-keyframes scroll-ani {
-  0% {
-    opacity: 1;
-    top: 29%;
-  }
-  15% {
-    opacity: 1;
-    top: 50%;
-  }
-  50% {
-    opacity: 0;
-    top: 50%;
-  }
-  100% {
-    opacity: 0;
-    top: 29%;
-  }
+.scrollicon p {
+  margin-left: -17px;
+  width: max-content;
 }
-@-moz-keyframes scroll-ani {
-  0% {
-    opacity: 1;
-    top: 29%;
-  }
-  15% {
-    opacity: 1;
-    top: 50%;
-  }
-  50% {
-    opacity: 0;
-    top: 50%;
-  }
-  100% {
-    opacity: 0;
-    top: 29%;
-  }
+@-webkit-keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
 }
-@keyframes scroll-ani {
-  0% {
-    opacity: 1;
-    top: 29%;
-  }
-  15% {
-    opacity: 1;
-    top: 50%;
-  }
-  50% {
-    opacity: 0;
-    top: 50%;
-  }
-  100% {
-    opacity: 0;
-    top: 29%;
-  }
+@-moz-keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
 }
-.mouse-scroll {
-  display: inline-block;
-  line-height: 18px;
-  font-size: 13px;
-  font-weight: normal;
-  color: #7F8C8D;
-  color: #FFF;
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  letter-spacing: 2px;
-  margin-top: 25%;
-  text-decoration: none;
-  overflow: hidden;
+@keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+ .scroll-btn {
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+.scroll-btn > * {
+	display: inline-block;
+	line-height: 18px;
+	font-size: 13px;
+	font-weight: normal;
+	color: #7f8c8d;
+	color: #ffffff;
+	font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	letter-spacing: 2px;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *.active {
+	color: #ffffff;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *:active,
+.scroll-btn > *.active {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+.scroll-btn .mouse {
+	position: relative;
+	display: block;
+	width: 35px;
+	height: 55px;
+	margin: 0 auto 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 3px solid white;
+	border-radius: 23px;
+}
+.scroll-btn .mouse > * {
+	position: absolute;
+	display: block;
+	top: 29%;
+	left: 50%;
+	width: 8px;
+	height: 8px;
+	margin: -4px 0 0 -4px;
+	background: white;
+	border-radius: 50%;
+	-webkit-animation: ani-mouse 2.5s linear infinite;
+	-moz-animation: ani-mouse 2.5s linear infinite;
+	animation: ani-mouse 2.5s linear infinite;
+}
 
+/*povpraševanje*/
+.povprasevanje{
+    width: 50%;
+    margin-left: 50%;
 }
-.mouse-scroll .mouse {
-  position: relative;
-  display: block;
-  width: 46px;
-  height: 73px;
-  margin: 0 auto 20px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  border: 3px solid #FFF;
-  border-radius: 23px;
+.povprasevanje h1{
+    color: #00AAAF;
+    font-weight: 900;
 }
-.mouse-scroll .mouse .mouse-movement {
-  position: absolute;
-  display: block;
-  top: 29%;
-  left: 50%;
-  width: 8px;
-  height: 8px;
-  margin: -4px 0 0 -4px;
-  background: #FFF;
-  border-radius: 50%;
-  -webkit-animation: scroll-ani 4s linear infinite;
-  -moz-animation: scroll-ani 4s linear infinite;
-  animation: scroll-ani 4s linear infinite;
+input{
+    background-color: #4B88A2;
+    color: white;
+    padding: 20px;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 20px;
+    
 }
-.mouse-scroll .mouse-message {
-  float: left;
-  margin: -200px 0 0 7px;
-  padding: 0;
-  -webkit-animation: scroll-ani 4s linear infinite;
-  -moz-animation: scroll-ani 4s linear infinite;
-  animation: scroll-ani 4s linear infinite;
+input:focus{
+  outline: none;
 }
-.mouse-scroll:hover .mouse-message {
-  margin-top: 0;
+textarea{
+    background-color: #4B88A2;
+    color: white;
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    padding: 20px;
+    margin-top: 20px;
+}
+textarea:focus{
+  outline: none;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #fff;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #fff;
 }
