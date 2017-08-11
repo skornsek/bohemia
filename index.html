@@ -5,6 +5,9 @@
     <link rel="stylesheet" href="css/jqueryfullPage.css">
     <link rel="stylesheet" href="css/component.css">
     <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="plugini/slick//slick.css">
+    <link rel="stylesheet" href="plugini/slick/slick-theme.css">
+
     <link rel="stylesheet" href="css/style.css">
     <!--Fonti-->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
@@ -18,6 +21,7 @@
 </head>
 
 <body>
+    <div class="loadbg"></div>
     <div class="scrollicon">
         <span class="scroll-btn">
 	<a href="#">
@@ -39,9 +43,9 @@
 
                     <li data-menuanchor="secondPage" class="menu__item "><a href="#secondPage" class="menu__link">O NAS</a></li>
                     <li data-menuanchor="3rdPage" class="menu__item"><a href="#3rdPage" class="menu__link">PONUDBA</a></li>
-                    <li data-menuanchor="4thpage" class="menu__item"><a href="#4thpage" class="menu__link">POVPRAŠEVANJE</a></li>
-                    <li data-menuanchor="5thpage" class="menu__item"><a href="#5thpage" class="menu__link">REFERENCE</a></li>
-                    <li data-menuanchor="6thpage" class="menu__item"><a href="#6thpage" class="menu__link">KONTAKT</a></li>
+                    <li data-menuanchor="4thpage" class="menu__item"><a href="#4thpage" class="menu__link">REFERENCE</a></li>
+                    <li data-menuanchor="5thpage" class="menu__item"><a href="#5thpage" class="menu__link">KONTAKT</a></li>
+
 
                 </ul>
             </nav>
@@ -118,30 +122,124 @@
                 <img class="translation" src="img/onas.svg" alt="">
             </div>
         </div>
-        <div class="section bela" id="ponudba">
-            <h1>PONUDBA</h1>
-            <p>Nudimo prevode z najrazličnejših področij v sledečih jezikovnih kombinacijah</p>
-            <div class="crtaV"></div>
-            <div class="ponudba">
-                <img class="ponudbe" src="img/slo.svg" alt="">
-                <img class="ponudbe" src="img/ang.svg" alt="">
-                <img class="ponudbe" src="img/pol.svg" alt="">
+        <div class="section">
+            <div class="container">
+                <div class="ponudba">
+                    <h1>PONUDBA</h1>
+                    <div class="crta"></div>
+                    <p class="normal">Nudimo prevode z najrazličnejših področij v sledečih jezikovnih kombinacijah.</p>
+                    <p class="modra">*Poleg navedenega uredimo tudi prevode drugih kombinacij po želji stranke.<br>(1prevajalska stran = 1500
+                        znakov brez presledkov)</p>
+                </div>
+                <div class="ponudbaslike">
+                    <div class="vsebina2">
+
+                        <img id="ponudba1" src="img/1-ponudba.svg" alt="">
+                        <img id="ponudba2" src="img/2-ponudba.svg" alt="">
+                        <img id="ponudba3" src="img/3-ponudba.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section beloozadje ">
+            <div class="referenceslide">
+                <div class="bgreference">
+                    <div class="container">
+                        <img src="img/reference.svg" alt="">
+                        <div class="refnapis">
+                            <h1>REFERENCE</h1>
+                            <div class="crtaref"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow-down"></div>
+                <div class="refslider">
+
+
+                    <div class="sliderkontejner">
+                        <div class="reflogos">
+                            <div>
+                                <img src="img/reference/riko.png">
+                            </div>
+                            <div>
+                                <img src="img/reference/Bibo-Logo.png">
+                            </div>
+                            <div>
+                                <img src="img/reference/dotykacka-logo.png">
+                            </div>
+                            <div>
+                                <img src="img/reference/Clio.png">
+                            </div>
+                            <div>
+                                <img src="img/reference/festival-velenje.jpg">
+                            </div>
+                            <div>
+                                <img src="img/reference/endorfilm.jpg">
+                            </div>
+                            <div>
+                                <img src="img/reference/gorenjeGroup.png">
+                            </div>
+                            <div>
+                                <img src="img/reference/gorenjeGTI.png">
+                            </div>
+                            <div>
+                                <img src="img/reference/Gvs.gif">
+                            </div>
+                            <div>
+                                <img src="img/reference/kenova.jpeg">
+                            </div>
+                            <div>
+                                <img src="img/reference/kom.png">
+                            </div>
+                            <div>
+                                <img src="img/reference/nirAmaja_logo.png">
+                            </div>
+                            <div>
+                                <img src="img/reference/peresce.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
         <div class="section">
-            <div class="container">
-                <div class="povprasevanje">
-                    <h1>POŠLJITE <br>POVPRAŠEVANJE</h1>
-                    <input placeholder="Ime in Priimek" type="text">
-                    <input placeholder="E-mail" type="email">
-                    <textarea placeholder="Sporočilo" name="" id="" cols="30" rows="10"></textarea>
+            <div class="container vodoravnaporavnava">
 
+                <div class="kontakt">
+                    <div class="vsebina">
+                        <h1>KONTAKT</h1>
+                        <p>Na voljo smo vsak dan v tednu.</p>
+                        <div class="crta"></div>
+                        <div class="kontaktalineja">
+                            <div class="ikonaplaceholder"><img class="ikone" src="img/ikone/placeholder.svg" alt=""></div>
+                            <div class="kontaktinfo"> <span class="krepko">Prevodi Bohemia s.p.</span> <br>Ulica Janeza Novaka<br>3320 Velenje<br>Slovenija
+                            </div>
+                        </div>
+                        <div class="kontaktalineja">
+                            <div class="ikonaplaceholder"><img class="ikone" src="img/ikone/mail.svg" alt=""></div>
+                            <div class="kontaktinfo"> prevodi@bohemia.si</div>
+                        </div>
+                        <div class="kontaktalineja">
+                            <div class="ikonaplaceholder"><img class="ikone" src="img/ikone/phone-call.svg" alt=""></div>
+                            <div class="kontaktinfo">+386 40 819 891</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="povprasevanje">
+                    <div class="vsebina">
+                        <h1>POŠLJITE <br>POVPRAŠEVANJE</h1>
+                        <input placeholder="Ime in Priimek" type="text">
+                        <input placeholder="E-mail" type="email">
+                        <textarea placeholder="Sporočilo" name="" id="" cols="30" rows="7"></textarea>
+                        <button id="poslji">POŠLJI</button>
+                    </div>
                 </div>
             </div>
-            <img class="posta" src="img/Posta.svg" alt="">
         </div>
-        <div class="section">test 5</div>
-        <div class="section">test 6</div>
+
+    </div>
+
     </div>
 
 
@@ -155,6 +253,7 @@
     <script type="text/javascript" src="js/modernizr-custom.js"></script>
     <script type="text/javascript" src="js/jquery.interactive_bg.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+    <script type="text/javascript" src="plugini/slick/slick.js"></script>
 
 
     <script>
@@ -177,8 +276,9 @@
             //     closeOnClick: true,
 
             // });
-	    $(".logo").hide(0).delay(300).fadeIn(2000, function () {
-                
+            $(".logo").hide(0);
+            $(".loadbg").delay(300).fadeOut(500, function () {
+                $(".logo").fadeIn(3000);
             });
             $(".bg").interactive_bg({
                 strength: 25,              // Movement Strength when the cursor is moved. The higher, the faster it will reacts to your cursor. The default value is 25.
@@ -195,6 +295,22 @@
                 contain: true,             // This option will prevent the scaled object/background from spilling out of its container. Keep this true for interactive background. Set it to false if you want to make an interactive object instead of a background. The default value is true.
                 wrapContent: true        // This option let you choose whether you want everything inside to reacts to your cursor, or just the background. Toggle it to true to have every elements inside reacts the same way. The default value is false
             });
+
+            $(".reflogos").slick({
+
+                infinite: true,
+
+                slidesToShow: 5,
+
+                variableWidth: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                prevArrow: "<img class='a-left control-c prev slick-prev' src='plugini/slick/img/back.svg'>",
+                nextArrow: "<img class='a-right control-c next slick-next' src='plugini/slick/img/next.svg'>"
+
+            });
+
+
 
         })
         $(window).resize(function () {
@@ -214,11 +330,15 @@
             if ($(window).width() > 739) {
                 //Add your javascript for large screens here
                 $('#fullpage').fullpage({
-                    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', '6thpage', '7thpage', 'lastPage'],
+                    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', '6thpage', 'lastPage'],
                     menu: '#menu',
+                    paddingTop: '0px',
+                    paddingBottom: '0px',
+                    fixedElements: '.glava',
+
                     onLeave: function (index, nextIndex, direction) {
                         var leavingSection = $(this);
-                        var t = TweenLite.to(".glava", 0.5, { height: 0, paused: true, reversed: true });
+
                         //after leaving section 1
                         if (index == 1 && direction == 'down') {
                             $('.glava').animate({
@@ -240,6 +360,24 @@
                             $('.scrollicon').fadeIn("slow").removeClass('hide');
 
                         }
+                        else if (index == 2 && direction == 'down') {
+                            var ponudba1 = document.getElementById("ponudba1");
+                            var tl = new TimelineMax({ repeat: 0 })
+                            tl.to(ponudba1, 0, { opacity: 0, x: 500 })
+                                .to(ponudba1, 0.8, { opacity: 1, x: 0, ease: Power1.easeInOut });
+                            
+                            var ponudba2 = document.getElementById("ponudba2");
+                            var tl = new TimelineMax({ repeat: 0 })
+                            tl.to(ponudba2, 0, { opacity: 0, x: 500 })
+                                .to(ponudba2, 0.8, { delay:0.3, opacity: 1, x: 0, ease: Power1.easeInOut });
+                           
+                            var ponudba3 = document.getElementById("ponudba3");
+                            var tl = new TimelineMax({ repeat: 0 })
+                            tl.to(ponudba3, 0, { opacity: 0, x: 500 })
+                                .to(ponudba3, 0.8, { delay:0.6, opacity: 1, x: 0, ease: Power1.easeInOut });
+
+
+                        }
 
                     }
                 });
@@ -248,7 +386,7 @@
                 //Add your javascript for small screens here
                 $('#ponudba').addClass('fp-normal-scroll')
                 $('#fullpage').fullpage({
-                    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', '6thpage', '7thpage', 'lastPage'],
+                    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', '6thpage', 'lastPage'],
                     fitToSection: false,
                     hybrid: true,
                     responsiveWidth: 900,
@@ -275,6 +413,7 @@
 
                         // return if already current
                         if (classie.has(item, 'menu__item--current')) {
+
                             return false;
                         }
                         // remove current

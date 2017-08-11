@@ -4,6 +4,15 @@ body{
     font-family: 'Montserrat', sans-serif;
     
 }
+.loadbg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    background-color:#002837;
+}
 a, a:hover, a:active{
     text-decoration: none !important;
 }
@@ -32,12 +41,13 @@ p{
     filter: invert(30%);
 
 }
+
 #menu{
     top: 0;
     left:0;
     right: 0;
     height: 80px;
-    max-width: 630px;
+    max-width: 430px;
     margin: 20px auto  0px auto;
     z-index: 70;
     position: fixed;
@@ -103,7 +113,7 @@ p{
 .crtaV{
     background-color: #4B88A2;
     height: 7px;
-    border-radius: 6px;
+
     position: relative;
     z-index: 1;
 
@@ -115,7 +125,7 @@ p{
 .svetlomodra h1{
     font-weight: 900;
     color: #002837;
-    font-size: 8em; 
+    font-size: 100px; 
     text-align: center;
     margin: 0px;
     position: relative;
@@ -126,44 +136,60 @@ p{
     font-weight: 300;
     width: 40%;
     margin-left: 45.7%;
-    font-size: 1.3em;
+    font-size: 18px;
    
 }
 .svetlomodra .crtaV{
     width: 17%;
     margin-left: 45.7%;
 }
-.bela{
-    background-color: #fff;
-    color:#002837;
-    
-}
-.bela h1{
-    font-weight: 900;
-    color: #00AAAF;
-    font-size: 8em; 
-    text-align: center;
-    margin: 0px;
-}
-.bela p{
-    text-align: center;
-    margin: 40px auto;
-    width: 25%;
-    font-size: 1.3em;
-}
-.bela .crtaV{
-    width: 8%;
-    margin: auto;
-}
+/*ponudba*/
 .ponudba{
-    width:50%;
-    margin: 50px auto 0 auto;
+    width: 40%;
+    float:left;
 }
-.ponudba img{
-    width: 28%;
-    height: auto;
-    margin:0 2.5%;
+.ponudba h1{
+    color: #00AAAF;
+    font-size: 80px;
+    font-weight: 900;
 }
+.ponudba .normal{
+    font-weight: 500;
+    color: #fff;
+    margin: 60px 0;
+    font-size: 18px;
+}
+.ponudba p{
+    width: 80%;
+}
+.ponudba .crta{
+    height: 7px;
+    background-color: #4B88A2;
+    width: 50%;
+    margin: 40px 0;
+}
+.ponudba .modra{
+    color: #00AAAF;
+    font-weight: 400;
+    margin: 40px 0;
+}
+.ponudbaslike{
+    float: right;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+.ponudbaslike img{
+    height: 14vh;
+    width: auto;
+    margin: 2vh 0;
+}
+
+
+
 .translation{
     position: absolute;
     top:150;
@@ -199,9 +225,7 @@ p{
 
 
 }
-.bglayer2{
 
-}
 .vzorec2{
     width:100%; 
     height:100%; 
@@ -375,15 +399,33 @@ p{
 	-moz-animation: ani-mouse 2.5s linear infinite;
 	animation: ani-mouse 2.5s linear infinite;
 }
+.sectopn{
+    position: relative;
+}
+.vsebina{
+    position: absolute;
+    top: 60%;
+    transform: translateY(-60%);
+}
 
 /*povpraševanje*/
 .povprasevanje{
-    width: 50%;
-    margin-left: 50%;
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    margin-left: 40%;
+    top: 0;
+    left: 0;
+    padding: 0 15%;
+    margin-top: 40px;
 }
 .povprasevanje h1{
+    font-size: 45px;
     color: #00AAAF;
     font-weight: 900;
+    margin: 0px 0 20px 0;
+    line-height: 60px;
+    
 }
 input{
     background-color: #4B88A2;
@@ -393,6 +435,7 @@ input{
     box-sizing: border-box;
     width: 100%;
     margin-top: 20px;
+    font-weight: 300;
     
 }
 input:focus{
@@ -406,9 +449,30 @@ textarea{
     border: none;
     padding: 20px;
     margin-top: 20px;
+    font-weight: 300;
 }
 textarea:focus{
   outline: none;
+}
+button{
+     box-sizing: border-box;
+    
+     border: none;
+     background-color: #00AAAF;
+     color: white;
+     padding: 10px 50px;
+     border-radius: 20px;
+     font-weight: 500;
+     font-size: 22px;
+     margin: 20px 0;
+}
+button:focus{
+    background-color: #00AAAF;
+}
+
+button:hover{
+    background-color: #ffF;
+    color: #00AAAF;
 }
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    #fff;
@@ -426,4 +490,165 @@ textarea:focus{
 }
 ::-ms-input-placeholder { /* Microsoft Edge */
    color:    #fff;
+}
+
+/*slider reference */
+.referenceslide{
+    overflow-x: hidden;
+    
+}
+.bgreference{
+    height: 55%;
+    width: 100%;
+    position: absolute;
+    top: 120;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+ .bgreference img{
+    width: auto;
+    height: 300px;
+    float: left;
+    
+} 
+.bgreference h1{
+    font-weight: 900;
+    color: #002837;
+    font-size: 100px; 
+    margin: 0px;
+
+    
+
+}
+ .refnapis{
+    float: left;
+    padding: 10% 0 10% 7%;
+    
+} 
+.crtaref{
+    height: 7px;
+    width: 60%;
+    background-color: white;
+    margin: 20px 4px;
+}
+
+.refslider{
+    top:65%;
+    left: 0;
+    background-color: #fff;
+    height: 35%;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    
+    
+}
+
+.reflogos{
+    width: 80%;
+    margin: 0 10% ;
+    height: 50px;
+    
+}
+
+.refslider img{
+    height: 50px;
+    width: auto;
+    margin: 0 50px;
+}
+.slick-slide{
+    outline: none;
+}
+.slick-prev {
+    left: -150px;
+
+}
+.slick-next {
+    right: -150px;
+    background-color: transparent;
+
+}
+.beloozadje{
+    background-color: #00AAAF;
+}
+
+
+/*puscice*/
+
+.arrow-down {
+  width: 0; 
+  height: 10%; 
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  z-index: 11;
+  border-top: 60px solid #00AAAF;
+  margin: auto;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+}
+
+
+/*kontakt*/
+.kontakt{
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    background-color: #4B88A2;
+    padding: 10%;
+    top:0;
+    left: 0;
+}
+.kontakt h1{
+    font-weight: 900;
+    color: #002837;
+    margin: 0px;
+    font-size: 45px;
+}
+.kontakt p{
+    font-weight: 500;
+    color: #002837;
+    margin: 0px;
+    font-size: 18px;
+}
+.kontaktalineja{
+    margin: 40px 0;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+}
+.krepko{
+    font-weight: 500;
+}
+.kontakt .crta{
+    background-color: #00AAAF;
+    height: 7px;
+    width: 100%;
+    margin: 40px 0;
+}
+.kontakt button{
+   
+}
+#poslji{
+     float: right;
+
+}
+.ikone{
+    height: 25px;
+    width: auto;
+}
+.ikonaplaceholder{
+    width: 40px;
+
+}
+.kontaktinfo{
+    position: relative;
+    top: -28;
+    left: 60;
 }
