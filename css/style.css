@@ -127,7 +127,7 @@ p{
     color: #002837;
     font-size: 100px; 
     text-align: center;
-    margin: 0px;
+    margin: 70px 0 0 0 ;
     position: relative;
     z-index: 1;
 }
@@ -193,12 +193,12 @@ p{
 
 .translation{
     position: absolute;
-    top:150;
+    top:40vh;
     left:-100;
     width: auto;
-    height: 80%;
+    height: 80vh;
     opacity: 0.3;
-    object-fit: cover;
+    margin-top: -25vh;
     max-width: 100%;
     
 }
@@ -404,6 +404,11 @@ p{
     position: relative;
 }
 .vsebina{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.vsebina2{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
