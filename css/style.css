@@ -192,6 +192,7 @@ p{
     height: 14vh;
     width: auto;
     margin: 2vh 0;
+    max-height: 150px;
 }
 
 
@@ -240,6 +241,12 @@ p{
 }
 
 /*media*/
+/*ogromni*/
+@media all and (min-width: 1600px) { 
+    .kontakt{
+        padding: 0 10% 0 25vh !important;
+    }
+}
 /*velik*/
 @media all and (min-width: 1024px) and (max-width: 1280px) { 
 
@@ -287,6 +294,7 @@ p{
         width: 80%;
         height: auto;
         margin:2% 10%;
+        
     }
 }
 
