@@ -422,7 +422,7 @@ p{
     width: 40%;
     height: 100%;
     position: absolute;
-    top: 0;
+    top: 50;
     left: 40%;
     padding: 0 15%;
 
@@ -610,7 +610,7 @@ button:hover{
     position: absolute;
     background-color: #4B88A2;
     padding: 0 10%;
-    top:0;
+    top:50;
     left: 0;
 }
 .kontakt h1{
