@@ -413,17 +413,19 @@ p{
     top: 50%;
     transform: translateY(-50%);
 }
+.visina{
+    height: 550px;
+}
 
 /*povpraševanje*/
 .povprasevanje{
     width: 40%;
     height: 100%;
     position: absolute;
-    margin-left: 40%;
     top: 0;
-    left: 0;
+    left: 40%;
     padding: 0 15%;
-    margin-top: 40px;
+
 }
 .povprasevanje h1{
     font-size: 45px;
@@ -436,7 +438,7 @@ p{
 input{
     background-color: #4B88A2;
     color: white;
-    padding: 20px;
+    padding: 18px;
     border: none;
     box-sizing: border-box;
     width: 100%;
@@ -453,7 +455,7 @@ textarea{
     box-sizing: border-box;
     width: 100%;
     border: none;
-    padding: 20px;
+    padding: 18px;
     margin-top: 20px;
     font-weight: 300;
 }
@@ -607,7 +609,7 @@ button:hover{
     height: 100%;
     position: absolute;
     background-color: #4B88A2;
-    padding: 10%;
+    padding: 0 10%;
     top:0;
     left: 0;
 }
