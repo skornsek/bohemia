@@ -4,6 +4,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     
 }
+
 .loadbg{
     position: absolute;
     top: 0;
@@ -105,9 +106,10 @@ p{
 }
 .scrollicon{
     position: absolute;
-    bottom: 150;
+    bottom: 150px;
     left: 50%;
-
+    
+    outline:none;
 }
 
 
@@ -200,7 +202,7 @@ p{
 .translation{
     position: absolute;
     top:40vh;
-    left:-100;
+    left:-100px;
     width: auto;
     height: 80vh;
     opacity: 0.3;
@@ -239,6 +241,7 @@ p{
     background:url(pattern2+.svg) center center no-repeat;
 
 }
+
 
 /*media*/
 /*ogromni*/
@@ -397,7 +400,8 @@ p{
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	border: 3px solid white;
-	border-radius: 23px;
+    border-radius: 23px;
+    outline:none;
 }
 .scroll-btn .mouse > * {
 	position: absolute;
@@ -523,7 +527,7 @@ button:hover{
     height: 55%;
     width: 100%;
     position: absolute;
-    top: 120;
+    top: 120px;
     left: 0;
     display: flex;
     flex-direction: column;
@@ -671,8 +675,8 @@ button:hover{
 }
 .kontaktinfo{
     position: relative;
-    top: -28;
-    left: 60;
+    top: -38px;
+    left: 60px;
 }
 
 /*media*/
