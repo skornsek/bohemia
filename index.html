@@ -305,13 +305,14 @@
                 $("#fullpage").show();
                 $(".scrollicon").show();
             }
+            
         }
 
         $(document).ready(function () {
 
             var visina = $(window).height();
             var sirina = $(window).width();
-
+               
             if (sirina > 1024) {
                 //Add your javascript for large screens here
                 $('#fullpage').fullpage({
@@ -395,12 +396,17 @@
                 });
             }
             else if (sirina >= 768 && sirina <= 1024) {
+                
                 $(window).resize(function () {
                     $(window).resizeanimation();
+                    location.reload();
+                    
                 });
                 $(document).ready(function(){
                     $(window).resizeanimation();
+                    
                 })
+                
                 //Add your javascript for small screens here
                 $('#ponudba').addClass('fp-auto-height')
                 $('#fullpage').fullpage({
@@ -457,9 +463,13 @@
             else {
                 $(window).resize(function () {
                     $(window).resizeanimation();
+                    location.reload();
+                    
+                   
                 });
                 $(document).ready(function(){
                     $(window).resizeanimation();
+                    
                 })
 
 
