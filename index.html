@@ -17,21 +17,24 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,900&amp;subset=latin-ext" rel="stylesheet">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="mobile-web-app-capable" content="yes">
     <!--jezik-->
     <meta charset="utf-8" />
 </head>
 
 <body>
     <div class="loadbg"></div>
+    <img class="rotateimganimacija" src="img/gif/rotate_screen_icon.gif" alt="">
     <div class="scrollicon">
         <span class="scroll-btn">
-	<a href="#secondPage">
+	<a id="mouseanimacija" href="#secondPage">
 		<span class="mouse">
 			<span>
 			</span>
         </span>
-        </a>
         <p>scroll me</p>
+        </a>
+
 
         </span>
     </div>
@@ -61,40 +64,6 @@
             </ul>
         </nav>
     </div>
-    <div class="glavatelefon show-on-medium-and-down hide-on-med-and-up">
-
-        <!-- <div class="topnav" id="myTopnav">
-            
-            <a href="#secondPage" class="menu__link">O NAS</a>
-            <a href="#3rdPage" class="menu__link">PONUDBA</a>
-            <a href="#4thpage" class="menu__link">POVPRAŠEVANJE</a>
-            <a href="#5thpage" class="menu__link">REFERENCE</a>
-            <a href="#6thpage" class="menu__link">KONTAKT</a>
-            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"><i class="material-icons">menu</i></a>
-            
-        </div> -->
-        <!-- <ul id="slide-out" class="side-nav">
-            <li data-menuanchor="secondPage" class="menu__item "><a href="#secondPage" class="menu__link">O NAS</a></li>
-            <li data-menuanchor="3rdPage" class="menu__item"><a href="#3rdPage" class="menu__link">PONUDBA</a></li>
-            <li data-menuanchor="4thpage" class="menu__item"><a href="#4thpage" class="menu__link">POVPRAŠEVANJE</a></li>
-            <li data-menuanchor="5thpage" class="menu__item"><a href="#5thpage" class="menu__link">REFERENCE</a></li>
-            <li data-menuanchor="6thpage" class="menu__item"><a href="#6thpage" class="menu__link">KONTAKT</a></li>
-        </ul>
-        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>    -->
-
-    </div>
-
-    <!-- <nav>
-        <ul id="menu">
-            <li data-menuanchor="firstPage"><a href="#firstPage">First section</a></li>
-            <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
-            <li data-menuanchor="3rdPage"><a href="#3rdPage">Third section</a></li>
-            <li data-menuanchor="4thpage"><a href="#4thpage">Fourth section</a></li>
-            <li data-menuanchor="5thPage"><a href="#5thpage">Fifth section</a></li>
-            <li data-menuanchor="6thpage"><a href="#6thpage">sixth section</a></li>
-
-        </ul>
-    </nav> -->
 
     <div id="fullpage">
 
@@ -116,28 +85,35 @@
             <div class="container">
                 <h1>O NAS</h1>
                 <div class="crtaV"></div>
-                <p>Smo ekipa prevajalcev podjetja Prevodi Bohemia. S svojimi izkušnjami, delavnostjo in strokovnostjo zagotavljamo
-                    kakovostne in ugodne storitve prevajanja in tolmačenja. Sodelujemo z rojenimi govorci in strokovnjaki
-                    posameznih področij prevajanja.
+                <p>Smo ekipa prevajalcev podjetja Prevodi Bohemia, ki jo sestavljamo univerzitetni diplomirani bohemisti, anglisti
+                    ter polonisti. S svojimi izkušnjami, delavnostjo in strokovnostjo zagotavljamo kakovostne in ugodne storitve
+                    prevajanja in tolmačenja. Sodelujemo z rojenimi govorci in strokovnjaki posameznih področij prevajanja.
                 </p>
-                <img class="translation" src="img/onas.svg" alt="">
+                <div class="translationcontainer">
+                    <img class="translation" src="img/onas.svg" alt="">
+                </div>
             </div>
         </div>
-        <div class="section">
+        <div id="ponudba" class="section">
             <div class="container">
                 <div class="ponudba">
                     <h1>PONUDBA</h1>
                     <div class="crta"></div>
                     <p class="normal">Nudimo prevode z najrazličnejših področij v sledečih jezikovnih kombinacijah.</p>
-                    <p class="modra">*Poleg navedenega uredimo tudi prevode drugih kombinacij po želji stranke.<br>**Ena prevajalska stran = 1500
-                        znakov brez presledkov.</p>
+                    <p class="normal">Tolmačenje ponujamo v jezikovnih kombinacijah češčina-slovenščina ter angleščina-srbščina.</p>
+                    <p class="modra">*Poleg navedenega uredimo tudi prevode drugih kombinacij po želji stranke. Pri svojem delu uporabljamo
+                        prevajalska orodja (CAT tools), kot na primer Memsource ali SDL Trados Studio ipd.<br><br>**Ena prevajalska
+                        stran = 1500 znakov brez presledkov; En dan tolmačenja = 8 ur.</p>
                 </div>
                 <div class="ponudbaslike">
                     <div class="vsebina2">
 
-                        <img id="ponudba1" src="img/1-ponudba.svg" alt="">
-                        <img id="ponudba2" src="img/2-ponudba.svg" alt="">
-                        <img id="ponudba3" src="img/3-ponudba.svg" alt="">
+                        <img class="hide-on-small-only" src="img/1-ponudba.svg" alt="">
+                        <img class="hide-on-small-only" src="img/2-ponudba.svg" alt="">
+                        <img class="hide-on-small-only" src="img/3-ponudba.svg" alt="">
+                        <img class="hide-on-med-and-up show-on-small" id="ponudba1" src="img/Mobi-1.svg" alt="">
+                        <img class="hide-on-med-and-up show-on-small" id="ponudba2" src="img/Mobi-2.svg" alt="">
+                        <img class="hide-on-med-and-up show-on-small" id="ponudba3" src="img/Mobi-3.svg" alt="">
                     </div>
                 </div>
             </div>
@@ -145,12 +121,13 @@
         <div class="section beloozadje ">
             <div class="referenceslide">
                 <div class="bgreference">
-                    
-                    <div class="containermid">
-                        <img src="img/reference.svg" alt="">
-                        <div class="refnapis">
-                            <h1>REFERENCE</h1>
-                            <div class="crtaref"></div>
+                    <div class="vsebina3">
+                        <div class="containermid">
+                            <img src="img/reference.svg" alt="">
+                            <div class="refnapis">
+                                <h1>REFERENCE</h1>
+                                <div class="crtaref"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -202,50 +179,51 @@
                             <div>
                                 <img src="img/reference/Asterix.png">
                             </div>
-                            <div>
-                                <img src="img/reference/Dynacast.png">
-                            </div>
                         </div>
                     </div>
                 </div>
 
             </div>
         </div>
-        <div class="section">
+        <div class="section bgsvetlomodra">
             <div class="container vodoravnaporavnava">
 
                 <div class="kontakt">
-                    <div class="vsebina">
-                           
-                        <div class="visina">
-                        <h1>KONTAKT</h1>
-                        <p>Na voljo smo vsak dan v tednu.</p>
-                        <div class="crta"></div>
-                        <div class="kontaktalineja">
-                            <div class="ikonaplaceholder"><img class="ikone" src="img/ikone/placeholder.svg" alt=""></div>
-                            <div class="kontaktinfo"> <span class="krepko">Prevodi Bohemia s.p.</span> <br>Ulica Janeza Novaka<br>3320 Velenje<br>Slovenija
+                    <div class="">
+
+                        <div class="sirina">
+                            <h1>KONTAKT</h1>
+                            <p>Na voljo smo vsak dan v tednu.</p>
+                            <div class="crta"></div>
+                            <div class="kontaktalineja">
+                                <div class="ikonaplaceholder"><img class="ikone" src="img/ikone/placeholder.svg" alt=""></div>
+                                <div class="kontaktinfo"> <span class="krepko">Prevodi Bohemia</span><br>Timotej Margon s.p.<br>Cesta XIV divizije
+                                    9
+                                    <br>3320 Velenje<br>Slovenija
+                                </div>
+                            </div>
+                            <div class="kontaktalineja">
+                                <div class="ikonaplaceholder"><img class="ikone" src="img/ikone/mail.svg" alt=""></div>
+                                <div class="kontaktinfo"> prevodi@bohemia.si</div>
+                            </div>
+                            <div class="kontaktalineja">
+                                <div class="ikonaplaceholder"><img class="ikone" src="img/ikone/phone-call.svg" alt=""></div>
+                                <div class="kontaktinfo">+386 40 819 891</div>
                             </div>
                         </div>
-                        <div class="kontaktalineja">
-                            <div class="ikonaplaceholder"><img class="ikone" src="img/ikone/mail.svg" alt=""></div>
-                            <div class="kontaktinfo"> prevodi@bohemia.si</div>
-                        </div>
-                        <div class="kontaktalineja">
-                            <div class="ikonaplaceholder"><img class="ikone" src="img/ikone/phone-call.svg" alt=""></div>
-                            <div class="kontaktinfo">+386 40 819 891</div>
-                        </div>
-                        </div>
-                    
+
                     </div>
                 </div>
                 <div class="povprasevanje">
                     <div class="vsebina">
                         <div class="visina">
-                        <h1>POŠLJITE <br>POVPRAŠEVANJE</h1>
-                        <input placeholder="Ime in Priimek" type="text">
-                        <input placeholder="E-mail" type="email">
-                        <textarea placeholder="Sporočilo" name="" id="" cols="30" rows="5"></textarea>
-                        <button id="poslji">POŠLJI</button>
+                            <h1>POŠLJITE <br>POVPRAŠEVANJE</h1>
+                            <form action="">
+                                <input placeholder="Ime in Priimek" type="text">
+                                <input placeholder="E-mail" type="email">
+                                <textarea placeholder="Sporočilo" name="" id="" cols="30" rows="5"></textarea>
+                                <button id="poslji">POŠLJI</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -290,39 +268,14 @@
             //     closeOnClick: true,
 
             // });
+
             $(".logo").hide(0);
             $(".loadbg").delay(300).fadeOut(500, function () {
                 $(".logo").fadeIn(3000);
             });
-            $(".bg").interactive_bg({
-                strength: 25,              // Movement Strength when the cursor is moved. The higher, the faster it will reacts to your cursor. The default value is 25.
-                scale: 1.00,               // The scale in which the background will be zoomed when hovering. Change this to 1 to stop scaling. The default value is 1.05.
-                animationSpeed: "100ms",   // The time it takes for the scale to animate. This accepts CSS3 time function such as "100ms", "2.5s", etc. The default value is "100ms".
-                contain: true,             // This option will prevent the scaled object/background from spilling out of its container. Keep this true for interactive background. Set it to false if you want to make an interactive object instead of a background. The default value is true.
-                wrapContent: true         // This option let you choose whether you want everything inside to reacts to your cursor, or just the background. Toggle it to true to have every elements inside reacts the same way. The default value is false
-            });
 
-            $(".bg2").interactive_bg({
-                strength: 30,              // Movement Strength when the cursor is moved. The higher, the faster it will reacts to your cursor. The default value is 25.
-                scale: 1.00,               // The scale in which the background will be zoomed when hovering. Change this to 1 to stop scaling. The default value is 1.05.
-                animationSpeed: "100ms",   // The time it takes for the scale to animate. This accepts CSS3 time function such as "100ms", "2.5s", etc. The default value is "100ms".
-                contain: true,             // This option will prevent the scaled object/background from spilling out of its container. Keep this true for interactive background. Set it to false if you want to make an interactive object instead of a background. The default value is true.
-                wrapContent: true        // This option let you choose whether you want everything inside to reacts to your cursor, or just the background. Toggle it to true to have every elements inside reacts the same way. The default value is false
-            });
 
-            $(".reflogos").slick({
 
-                infinite: true,
-
-                slidesToShow: 5,
-                slidesToScroll:1,
-                variableWidth: true,
-                autoplay: true,
-                autoplaySpeed: 1000,
-                prevArrow: "<img class='a-left control-c prev slick-prev' src='plugini/slick/img/back.svg'>",
-                nextArrow: "<img class='a-right control-c next slick-next' src='plugini/slick/img/next.svg'>"
-
-            });
 
 
 
@@ -339,14 +292,32 @@
         })
     </script>
     <script>
+        $.fn.resizeanimation = function () {
+            if (window.innerHeight < window.innerWidth) {
+                $(".loadbg").fadeIn();
+                $(".rotateimganimacija").fadeIn();
+                $("#fullpage").hide();
+                $(".scrollicon").hide();
+            }
+            else {
+                $(".loadbg").fadeOut();
+                $(".rotateimganimacija").hide();
+                $("#fullpage").show();
+                $(".scrollicon").show();
+            }
+        }
+
         $(document).ready(function () {
 
-            if ($(window).width() > 739) {
+            var visina = $(window).height();
+            var sirina = $(window).width();
+
+            if (sirina > 1024) {
                 //Add your javascript for large screens here
                 $('#fullpage').fullpage({
                     anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', '6thpage', 'lastPage'],
                     menu: '#menu',
-                    paddingTop: '0px',
+                    paddingTop: '100px',
                     paddingBottom: '0px',
                     fixedElements: '.glava',
 
@@ -379,39 +350,166 @@
                             var tl = new TimelineMax({ repeat: 0 })
                             tl.to(ponudba1, 0, { opacity: 0, x: 500 })
                                 .to(ponudba1, 0.8, { opacity: 1, x: 0, ease: Power1.easeInOut });
-                            
+
                             var ponudba2 = document.getElementById("ponudba2");
                             var tl = new TimelineMax({ repeat: 0 })
                             tl.to(ponudba2, 0, { opacity: 0, x: 500 })
-                                .to(ponudba2, 0.8, { delay:0.3, opacity: 1, x: 0, ease: Power1.easeInOut });
-                           
+                                .to(ponudba2, 0.8, { delay: 0.3, opacity: 1, x: 0, ease: Power1.easeInOut });
+
                             var ponudba3 = document.getElementById("ponudba3");
                             var tl = new TimelineMax({ repeat: 0 })
                             tl.to(ponudba3, 0, { opacity: 0, x: 500 })
-                                .to(ponudba3, 0.8, { delay:0.6, opacity: 1, x: 0, ease: Power1.easeInOut });
+                                .to(ponudba3, 0.8, { delay: 0.6, opacity: 1, x: 0, ease: Power1.easeInOut });
 
 
                         }
 
                     }
                 });
+                $(".bg").interactive_bg({
+                    strength: 25,              // Movement Strength when the cursor is moved. The higher, the faster it will reacts to your cursor. The default value is 25.
+                    scale: 1.00,               // The scale in which the background will be zoomed when hovering. Change this to 1 to stop scaling. The default value is 1.05.
+                    animationSpeed: "100ms",   // The time it takes for the scale to animate. This accepts CSS3 time function such as "100ms", "2.5s", etc. The default value is "100ms".
+                    contain: true,             // This option will prevent the scaled object/background from spilling out of its container. Keep this true for interactive background. Set it to false if you want to make an interactive object instead of a background. The default value is true.
+                    wrapContent: true         // This option let you choose whether you want everything inside to reacts to your cursor, or just the background. Toggle it to true to have every elements inside reacts the same way. The default value is false
+                });
+
+                $(".bg2").interactive_bg({
+                    strength: 30,              // Movement Strength when the cursor is moved. The higher, the faster it will reacts to your cursor. The default value is 25.
+                    scale: 1.00,               // The scale in which the background will be zoomed when hovering. Change this to 1 to stop scaling. The default value is 1.05.
+                    animationSpeed: "100ms",   // The time it takes for the scale to animate. This accepts CSS3 time function such as "100ms", "2.5s", etc. The default value is "100ms".
+                    contain: true,             // This option will prevent the scaled object/background from spilling out of its container. Keep this true for interactive background. Set it to false if you want to make an interactive object instead of a background. The default value is true.
+                    wrapContent: true        // This option let you choose whether you want everything inside to reacts to your cursor, or just the background. Toggle it to true to have every elements inside reacts the same way. The default value is false
+                });
+                $(".reflogos").slick({
+
+                    infinite: true,
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    variableWidth: true,
+                    autoplay: true,
+                    autoplaySpeed: 1000,
+                    prevArrow: "<img class='a-left control-c prev slick-prev' src='plugini/slick/img/back.svg'>",
+                    nextArrow: "<img class='a-right control-c next slick-next' src='plugini/slick/img/next.svg'>"
+
+                });
             }
-            else {
+            else if (sirina >= 768 && sirina <= 1024) {
+                $(window).resize(function () {
+                    $(window).resizeanimation();
+                });
+                $(document).ready(function(){
+                    $(window).resizeanimation();
+                })
                 //Add your javascript for small screens here
-                $('#ponudba').addClass('fp-normal-scroll')
+                $('#ponudba').addClass('fp-auto-height')
                 $('#fullpage').fullpage({
                     anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', '6thpage', 'lastPage'],
-                    fitToSection: false,
-                    hybrid: true,
-                    responsiveWidth: 900,
+                    paddingTop: '80px',
+                    paddingBottom: '80px',
                     autoScrolling: false,
+                    fitToSection: false,
 
+
+
+                    onLeave: function (index, nextIndex, direction) {
+                        var leavingSection = $(this);
+
+                        //after leaving section 1
+                        if (index == 1 && direction == 'down') {
+
+                            $('.scrollicon').fadeOut("slow").addClass('hide');
+
+
+
+                        }
+
+                        else if (index == 2 && direction == 'up') {
+
+
+                            $('.scrollicon').fadeIn("slow").removeClass('hide');
+
+                        }
+
+
+                    }
 
 
 
                 });
+                $(".bg").interactive_bg({
+                });
+                $(".reflogos").slick({
+
+                    infinite: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    variableWidth: false,
+                    autoplay: true,
+                    autoplaySpeed: 1000,
+                    arrows: false,
+
+                });
 
 
+
+            }
+            else {
+                $(window).resize(function () {
+                    $(window).resizeanimation();
+                });
+                $(document).ready(function(){
+                    $(window).resizeanimation();
+                })
+
+
+                $('#ponudba').addClass('fp-auto-height')
+
+                $('#fullpage').fullpage({
+                    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', '6thpage', 'lastPage'],
+                    paddingTop: '80px',
+                    paddingBottom: '80px',
+                    autoScrolling: false,
+                    fitToSection: false,
+
+                    onLeave: function (index, nextIndex, direction) {
+                        var leavingSection = $(this);
+
+                        //after leaving section 1
+                        if (index == 1 && direction == 'down') {
+
+                            $('.scrollicon').fadeOut("slow").addClass('hide');
+
+
+
+                        }
+
+                        else if (index == 2 && direction == 'up') {
+
+
+                            $('.scrollicon').fadeIn("slow").removeClass('hide');
+
+                        }
+
+
+                    }
+
+
+
+                });
+                $(".bg").interactive_bg({
+                });
+                $(".reflogos").slick({
+
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    variableWidth: false,
+                    autoplay: true,
+                    autoplaySpeed: 1000,
+                    arrows: false,
+
+                });
             }
         });
     </script>

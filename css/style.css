@@ -6,13 +6,25 @@ body{
 }
 
 .loadbg{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     z-index: 100;
     background-color:#002837;
+    overflow: hidden;
+}
+.rotateimganimacija{
+    width: 40px;
+    height: auto;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 101;
+    display: none;
+    
 }
 a, a:hover, a:active{
     text-decoration: none !important;
@@ -89,28 +101,13 @@ p{
         width: 80%;
         margin: 0 auto;
 }
-.containermid{
-        
-        width: 857px;
-        margin: 0 auto;
-}
+
  
-.logo{
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   width: 400px;
-   height: 400px;
-   margin-top: -200px; /* Half the height */
-   margin-left: -200px; /* Half the width */
+
+.bgsvetlomodra{
+    background-color: #4B88A2;
 }
-.scrollicon{
-    position: absolute;
-    bottom: 150px;
-    left: 50%;
-    
-    outline:none;
-}
+
 
 
 
@@ -129,16 +126,78 @@ p{
     background-color: #00AAAF;
     
 }
+
+
+
+.svetlomodra .crtaV{
+    width: 17%;
+    
+    margin: 20px 0 30px 45.7%;
+}
+
+
+
+
+
+.posta{
+    height: 30%;
+    position: absolute;
+    margin-top: -150px;
+    top: 50%;
+    left: 0;
+
+}
+.bg{
+
+    background: center center / auto no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.bg2{
+    background: center center / cover no-repeat;
+    height: 100%;
+    width: 100%;
+    
+
+
+}
+
+.vzorec2{
+    width:100%; 
+    height:100%; 
+    background:url(pattern2+.svg) center center no-repeat;
+
+}
+
+
+/*media*/
+/*ogromni*/
+@media all and (min-width: 1281px) { 
+/* .kontakt{
+    padding: 0 10% 0 25vh !important;
+} */
+.logo{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 400px;
+   height: 400px;
+   margin-top: -200px; /* Half the height */
+   margin-left: -200px; /* Half the width */
+}
+/*o nas*/
 .svetlomodra h1{
     font-weight: 900;
     color: #002837;
     font-size: 100px; 
     text-align: center;
-    margin: 70px 0 0 0 ;
+    margin:0px;
     position: relative;
     z-index: 1;
 }
-
 .svetlomodra p{
     font-weight: 300;
     width: 40%;
@@ -146,10 +205,282 @@ p{
     font-size: 18px;
    
 }
-.svetlomodra .crtaV{
-    width: 17%;
+.translation{
+    position: absolute;
+    top:40vh;
+    left:-100px;
+    width: auto;
+    height: 80vh;
+    opacity: 0.3;
+    margin-top: -25vh;
+    max-width: 100%;
+    overflow: hidden;
     
-    margin: 20px 0 30px 45.7%;
+}
+.scrollicon{
+    position: absolute;
+    bottom: 150px;
+    left: 0;
+    width: 100%;
+    outline:none;
+}
+/*ponudba*/
+.ponudba{
+    width: 40%;
+    float:left;
+}
+.ponudba h1{
+    color: #00AAAF;
+    font-size: 80px;
+    font-weight: 900;
+    margin: 0px;
+}
+.ponudba .normal{
+    font-weight: 400;
+    color: #fff;
+    margin: 40px 0;
+    font-size: 18px;
+}
+.ponudba p{
+    width: 80%;
+}
+.ponudba .crta{
+    height: 7px;
+    background-color: #4B88A2;
+    width: 50%;
+    margin: 20px 0 30px 0;
+}
+.ponudba .modra{
+    color: #00AAAF;
+    font-weight: 300;
+    margin: 40px 0;
+}
+.ponudbaslike{
+    float: right;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+.ponudbaslike img{
+    height: 14vh;
+    width: auto;
+    margin: 2vh 0;
+    max-height: 150px;
+}
+.vsebina2{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 50px;
+}
+
+/*slider reference */
+.referenceslide{
+    overflow-x: hidden;
+    
+}
+.bgreference{
+    height: 55%;
+    width: 100%;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+ .bgreference img{
+    width: auto;
+    height: 30vh;
+    float: left;
+    max-height: 280px;
+} 
+.bgreference h1{
+    font-weight: 900;
+    color: #002837;
+    font-size: 80px; 
+    margin: 0px;
+
+    
+
+}
+ .refnapis{
+    float: left;
+    padding: 10% 0 10% 7%;
+    
+} 
+.crtaref{
+    height: 7px;
+    width: 60%;
+    background-color: #4B88A2;
+    margin: 20px 4px 0 0;
+}
+.containermid{
+        
+        width: 857px;
+        margin: 0 auto;
+}
+.refslider{
+    top:65%;
+    left: 0;
+    background-color: #fff;
+    height: 35%;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    
+    
+    
+}
+
+.reflogos{
+    width: 80%;
+    margin: 0 10% ;
+    height: 50px;
+    
+}
+
+.refslider img{
+    height: 50px;
+    width: auto;
+    margin: 0 50px;
+}
+.slick-slide{
+    outline: none;
+}
+.slick-prev {
+    left: -150px;
+
+}
+.slick-next {
+    right: -150px;
+    background-color: transparent;
+
+}
+.arrow-down {
+  width: 0; 
+  height: 10%; 
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  z-index: 11;
+  border-top: 60px solid #00AAAF;
+  margin-left: -45px;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+}
+/*kontakt*/
+.kontakt{
+    width: 300px;
+    margin: auto;
+    height: 100%;
+    
+}
+.kontakt h1{
+    font-weight: 900;
+    color: #002837;
+    margin: 30px 0 0 0 ;
+    font-size: 45px;
+}
+.kontakt p{
+    font-weight: 500;
+    color: #002837;
+    margin: 0px;
+    font-size: 18px;
+}
+.kontaktalineja{
+    margin: 40px 0;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+}
+.krepko{
+    font-weight: 500;
+}
+.kontakt .crta{
+    background-color: #00AAAF;
+    height: 7px;
+    width: 100%;
+    margin: 20px 0 30px 0;
+}
+
+#poslji{
+     float: right;
+
+}
+.ikone{
+    height: 25px;
+    width: auto;
+}
+.ikonaplaceholder{
+    width: 40px;
+
+}
+.kontaktinfo{
+    position: relative;
+    top: -36px;
+    left: 60px;
+}
+}
+/*velik*/
+@media all and (min-width: 1025px) and (max-width: 1280px) { 
+.logo{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 400px;
+   height: 400px;
+   margin-top: -200px; /* Half the height */
+   margin-left: -200px; /* Half the width */
+}
+.bg{
+    max-height: 100%;
+    overflow:hidden
+}
+#bgmove{
+    height: 100% !important;
+    overflow:hidden
+}
+.svetlomodra h1{
+    font-weight: 900;
+    color: #002837;
+    font-size: 100px; 
+    text-align: center;
+    margin: 0px;
+    position: relative;
+    z-index: 1;
+}
+.svetlomodra p{
+    font-weight: 300;
+    width: 40%;
+    margin-left: 45.7%;
+    font-size: 18px;
+   
+}
+.scrollicon{
+    position: absolute;
+    bottom: 150px;
+    left: 0;
+    width: 100%;
+    outline:none;
+}
+.translation{
+    position: absolute;
+    top:40vh;
+    left:-100px;
+    width: auto;
+    height: 80vh;
+    opacity: 0.3;
+    margin-top: -25vh;
+    max-width: 100%;
+    
 }
 /*ponudba*/
 .ponudba{
@@ -196,8 +527,202 @@ p{
     margin: 2vh 0;
     max-height: 150px;
 }
+.vsebina2{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 50px;
+}
 
+/*slider reference */
+.referenceslide{
+    overflow-x: hidden;
+    
+}
+.bgreference{
+    height: 65%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+ .bgreference img{
+    width: auto;
+    height: 30vh;
+    float: left;
+    max-height: 280px;
+} 
+.bgreference h1{
+    font-weight: 900;
+    color: #002837;
+    font-size: 80px; 
+    margin: 0px;
 
+    
+
+}
+ .refnapis{
+    float: left;
+    padding: 10% 0 10% 7%;
+    
+} 
+.crtaref{
+    height: 7px;
+    width: 60%;
+    background-color: #4B88A2;
+    margin: 20px 4px 0 0;
+}
+.containermid{
+        
+        width: 857px;
+        margin: 0 auto;
+}
+
+.refslider{
+    top:65%;
+    left: 0;
+    background-color: #fff;
+    height: 35%;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    
+    
+}
+
+.reflogos{
+    width: 80%;
+    margin: 0 10% ;
+    height: 50px;
+    
+}
+
+.refslider img{
+    height: 50px;
+    width: auto;
+    margin: 0 50px;
+}
+.slick-slide{
+    outline: none;
+}
+.slick-prev {
+    left: -150px;
+
+}
+.slick-next {
+    right: -150px;
+    background-color: transparent;
+
+}
+.arrow-down {
+  width: 0; 
+  height: 10%; 
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  z-index: 11;
+  border-top: 60px solid #00AAAF;
+  margin-left: -45px;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+}
+/*kontakt*/
+.kontakt{
+    width: 300px;
+    margin: auto;
+    height: 100%;
+    
+}
+.kontakt h1{
+    font-weight: 900;
+    color: #002837;
+    margin: 30px 0 0 0 ;
+    font-size: 45px;
+}
+.kontakt p{
+    font-weight: 500;
+    color: #002837;
+    margin: 0px;
+    font-size: 18px;
+}
+.kontaktalineja{
+    margin: 40px 0;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+}
+.krepko{
+    font-weight: 500;
+}
+.kontakt .crta{
+    background-color: #00AAAF;
+    height: 7px;
+    width: 100%;
+    margin: 20px 0 30px 0;
+}
+
+#poslji{
+     float: right;
+
+}
+.ikone{
+    height: 25px;
+    width: auto;
+}
+.ikonaplaceholder{
+    width: 40px;
+
+}
+.kontaktinfo{
+    position: relative;
+    top: -36px;
+    left: 60px;
+}
+}
+/*srednji*/
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.logo{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 400px;
+   height: 400px;
+   margin-top: -200px; /* Half the height */
+   margin-left: -200px; /* Half the width */
+}
+.bg{
+    
+}
+.bg2{
+    display: none;
+}
+.svetlomodra h1{
+    font-weight: 900;
+    color: #002837;
+    font-size: 100px; 
+    text-align: center;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+.svetlomodra p{
+    font-weight: 300;
+    width: 50%;
+    margin-left: 45.7%;
+    font-size: 18px;
+   
+}
 
 .translation{
     position: absolute;
@@ -210,101 +735,671 @@ p{
     max-width: 100%;
     
 }
-.posta{
-    height: 30%;
+.scrollicon{
     position: absolute;
-    margin-top: -150px;
-    top: 50%;
+    bottom: 120px;
     left: 0;
-
-}
-.bg{
-
-    background: center center / auto no-repeat;
     width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    outline:none;
 }
-.bg2{
-    background: center center / cover no-repeat;
-    height: 100%;
+/*ponudba*/
+.ponudba{
     width: 100%;
 
+}
+.ponudba h1{
+    color: #00AAAF;
+    font-size: 80px;
+    font-weight: 900;
+}
+.ponudba .normal{
+    font-weight: 400;
+    color: #fff;
+    margin: 40px 0;
+    font-size: 18px;
+}
+.ponudba p{
+    width: 80%;
+}
+.ponudba .crta{
+    height: 7px;
+    background-color: #4B88A2;
+    width: 50%;
+    margin: 20px 0 30px 0;
+}
+.ponudba .modra{
+    color: #00AAAF;
+    font-weight: 300;
+    margin: 40px 0;
+}
+.ponudbaslike{
+   
+    width: 100%;
+    
 
 }
-
-.vzorec2{
-    width:100%; 
-    height:100%; 
-    background:url(pattern2+.svg) center center no-repeat;
-
+.ponudbaslike img{
+    height: 14vh;
+    width: auto;
+    margin: 2vh 0;
+    max-height: 150px;
+    max-width: 100%;
 }
 
-
-/*media*/
-/*ogromni*/
-@media all and (min-width: 1600px) { 
-    .kontakt{
-        padding: 0 10% 0 25vh !important;
-    }
+/*slider reference */
+.referenceslide{
+    overflow-x: hidden;
+    
 }
-/*velik*/
-@media all and (min-width: 1024px) and (max-width: 1280px) { 
+.bgreference{
+    height: 65%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+ .bgreference img{
+    display: none;
+} 
+.bgreference h1{
+    font-weight: 900;
+    color: #002837;
+    font-size: 80px; 
+    margin: 0px;
+    text-align: center;
+
+    
 
 }
-/*srednji*/
-@media all and (min-width: 768px) and (max-width: 1024px) { 
+ .refnapis{
+    width: 100%
+} 
+.crtaref{
+    height: 7px;
+    width: 40%;
+    background-color: #4B88A2;
+    margin: 20px auto;
+}
 
+.refslider{
+    top:65%;
+    left: 0;
+    background-color: #fff;
+    height: 35%;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    
+    
+}
+
+.reflogos{
+    width: 100%;
+    height: 50px;
+    
+}
+
+.refslider img{
+    height: 50px;
+    max-width: 100%;
+    margin: auto;
+}
+.slick-slide{
+    outline: none;
+}
+.slick-prev {
+    left: -150px;
+
+}
+.slick-next {
+    right: -150px;
+    background-color: transparent;
+
+}
+.arrow-down {
+  width: 0; 
+  height: 10%; 
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  z-index: 11;
+  border-top: 60px solid #00AAAF;
+  margin-left: -45px;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+}
+/*kontakt*/
+.kontakt{
+    width: 300px;
+    margin: auto;
+    height: 100%;
+    
+}
+.kontakt h1{
+    font-weight: 900;
+    color: #002837;
+    margin: 30px 0 0 0 ;
+    font-size: 45px;
+}
+.kontakt p{
+    font-weight: 500;
+    color: #002837;
+    margin: 0px;
+    font-size: 18px;
+}
+.kontaktalineja{
+    margin: 40px 0;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+}
+.krepko{
+    font-weight: 500;
+}
+.kontakt .crta{
+    background-color: #00AAAF;
+    height: 7px;
+    width: 100%;
+    margin: 20px 0 30px 0;
+}
+
+#poslji{
+     float: right;
+
+}
+.ikone{
+    height: 25px;
+    width: auto;
+}
+.ikonaplaceholder{
+    width: 40px;
+
+}
+.kontaktinfo{
+    position: relative;
+    top: -36px;
+    left: 60px;
+}
 }
 /*mali*/
 @media all and (min-width: 480px) and (max-width: 768px) { 
 
+.svetlomodra h1{
+    font-weight: 900;
+    color: #002837;
+    font-size: 100px; 
+    text-align: center;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+.scrollicon{
+    position: absolute;
+    bottom: 120px;
+    left: 0;
+    width: 100%;
+    outline:none;
+}
+/*ponudba*/
+.ponudba{
+    width: 100%;
+
+}
+.ponudba h1{
+    color: #00AAAF;
+    font-size: 60px;
+    font-weight: 900;
+}
+.ponudba .normal{
+    font-weight: 400;
+    color: #fff;
+    margin: 40px 0;
+    font-size: 18px;
+}
+.ponudba p{
+    width: 80%;
+}
+.ponudba .crta{
+    height: 7px;
+    background-color: #4B88A2;
+    width: 50%;
+    margin: 20px 0 30px 0;
+}
+.ponudba .modra{
+    color: #00AAAF;
+    font-weight: 300;
+    margin: 40px 0;
+}
+.ponudbaslike{
+   
+    width: 100%;
+    
+
+}
+.ponudbaslike img{
+    height: 14vh;
+    width: auto;
+    margin: 2vh 0;
+    max-height: 150px;
+    max-width: 100%;
+}
+
+/*slider reference */
+.referenceslide{
+    overflow-x: hidden;
+    
+}
+.bgreference{
+    height: 65%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+ .bgreference img{
+    display: none;
+} 
+.bgreference h1{
+    font-weight: 900;
+    color: #002837;
+    font-size: 60px; 
+    margin: 0px;
+    text-align: center;
+
+}
+ .refnapis{
+    width: 100%;
+    
+} 
+.crtaref{
+    height: 7px;
+    width: 40%;
+    background-color: #4B88A2;
+    margin: 20px auto;
+}
+
+.refslider{
+    top:65%;
+    left: 0;
+    background-color: #fff;
+    height: 35%;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    
+    
+}
+
+.reflogos{
+    width: 100%;
+    height: 50px;
+    
+}
+
+.refslider img{
+    height: 50px;
+    max-width: 100%;
+    margin: auto;
+}
+.slick-slide{
+    outline: none;
+}
+.slick-prev {
+    left: -150px;
+
+}
+.slick-next {
+    right: -150px;
+    background-color: transparent;
+
+}
+.arrow-down {
+  width: 0; 
+  height: 10%; 
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  z-index: 11;
+  border-top: 60px solid #00AAAF;
+  margin-left: -45px;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+}
+/*kontakt*/
+.kontakt{
+    width: 300px;
+    margin: auto;
+    height: 100%;
+    
+}
+.kontakt h1{
+    font-weight: 900;
+    color: #002837;
+    margin: 30px 0 0 0 ;
+    font-size: 45px;
+}
+.kontakt p{
+    font-weight: 500;
+    color: #002837;
+    margin: 0px;
+    font-size: 18px;
+}
+.kontaktalineja{
+    margin: 40px 0;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+}
+.krepko{
+    font-weight: 500;
+}
+.kontakt .crta{
+    background-color: #00AAAF;
+    height: 7px;
+    width: 100%;
+    margin: 20px 0 30px 0;
+}
+
+#poslji{
+     float: right;
+
+}
+.ikone{
+    height: 25px;
+    width: auto;
+}
+.ikonaplaceholder{
+    width: 40px;
+
+}
+.kontaktinfo{
+    position: relative;
+    top: -36px;
+    left: 60px;
+}
 }
 /*najmanjši*/
-@media all and (max-width: 480px) {
+@media all and (max-width: 479px) {
+    #fullpage{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
     .logo{
-        width: 80%;
-    }
-    .svetlomodra h1{
-    font-size: 2em;
-    }
-    .svetlomodra p{
-        width: 95%;
+        width: 70%;
         margin: auto;
-    }
-    .svetlomodra .crtaV{
-        width: 30%;
-        margin: 30px auto;
-    }
-    .bela h1{
-        font-size: 2em;
-    }
-    .bela p{
-        width: 95%;
-        margin: 20px auto;
-    }
-    .bela .crtaV{
-        width: 30%;
-        margin: 30px auto;
-    }
-    .ponudba{
-        width:95%;
-        margin: 50px auto 0 auto;
-    }
-    .ponudba img{
-        width: 80%;
-        height: auto;
-        margin:2% 10%;
+        margin-top: -40px;
         
     }
+    .svetlomodra h1{
+    font-weight: 900;
+    color: #002837;
+    font-size: 60px; 
+    text-align: left;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+.translationcontainer{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.translation{
+    position: absolute;
+    top:30vh;
+    left:-130px;
+    width: auto;
+    height: 90vh;
+    opacity: 0.3;
+    margin-top: -25vh;
+
+    
+}
+.scrollicon{
+    position: absolute;
+    bottom: 120px;
+    left: 0;
+    width: 100%;
+    outline:none;
+}
+.svetlomodra p{
+    width: 95%;
+    margin: 0px;
+}
+.svetlomodra .crtaV{
+    width: 40%;
+    margin: 20px 0;
+}
+.bg{
+
+}
+.bg2{
+    display: none;
+}
+/*ponudba*/
+.ponudba{
+    width: 100%;
+
+}
+.ponudba h1{
+    color: #00AAAF;
+    font-size: 48px;
+    font-weight: 900;
+    margin-top: 0px;
+}
+.ponudba .normal{
+    font-weight: 400;
+    color: #fff;
+    margin: 20px 0;
+    font-size: 15px;
+}
+
+.ponudba .crta{
+    height: 7px;
+    background-color: #4B88A2;
+    width: 50%;
+    margin: 20px 0 25px 0;
+}
+.ponudba .modra{
+    color: #00AAAF;
+    font-weight: 300;
+    margin: 20px 0;
+    font-size: 13px;
+}
+.ponudbaslike{
+   
+    width: 100%;
+    margin-top: 50px;
+
+}
+.ponudbaslike img{
+    height: 13vh;
+    width: auto; 
+    max-height: 150px;
+    max-width: 130%;
+    margin-left: -15%;
+}
+
+/*slider reference */
+.referenceslide{
+    overflow-x: hidden;
+    
+}
+.containermid{
+    width: 100% !important;
+}
+.bgreference{
+    height: 55%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+ .bgreference img{
+    display: none;
+} 
+.bgreference h1{
+    font-weight: 900;
+    color: #002837;
+    font-size: 48px; 
+    margin: 0px;
+    text-align: center;
+
+}
+ .refnapis{
+    width: 100%;
+    
+} 
+.crtaref{
+    height: 7px;
+    width: 60%;
+    background-color: #4B88A2;
+    margin: 20px auto;
+}
+
+.refslider{
+    top:55%;
+    left: 0;
+    background-color: #fff;
+    height: 45%;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-top: 50px;
+    
+    
+}
+
+.reflogos{
+    width: 100%;
+    height: 50px;
+    
+}
+
+.refslider img{
+    height: 50px;
+    max-width: 100%;
+    margin: auto;
+}
+.slick-slide{
+    outline: none;
+}
+.slick-prev {
+    left: -150px;
+
+}
+.slick-next {
+    right: -150px;
+    background-color: transparent;
+
+}
+.arrow-down {
+  width: 0; 
+  height: 10%; 
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  z-index: 11;
+  border-top: 60px solid #00AAAF;
+  margin-left: -60px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+}
+.vsebina3{
+    padding-top: 0px !important;
+}
+/*kontakt*/
+.kontakt{
+    width: 300px;
+    margin: auto;
+    height: 100%;
+    
+}
+.kontakt h1{
+    font-weight: 900;
+    color: #002837;
+    margin: 30px 0 0 0 ;
+    font-size: 45px;
+}
+.kontakt p{
+    font-weight: 500;
+    color: #002837;
+    margin: 0px;
+    font-size: 18px;
+}
+.kontaktalineja{
+    margin: 40px 0;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+}
+.krepko{
+    font-weight: 500;
+}
+.kontakt .crta{
+    background-color: #00AAAF;
+    height: 7px;
+    width: 100%;
+    margin: 20px 0 30px 0;
+}
+
+#poslji{
+     float: right;
+
+}
+.ikone{
+    height: 25px;
+    width: auto;
+}
+.ikonaplaceholder{
+    width: 40px;
+
+}
+.kontaktinfo{
+    position: relative;
+    top: -36px;
+    left: 60px;
+}
+}
+
+/*iphone5*/
+@media all and (max-width: 360px) {
+    .ponudbaslike img{
+    height: 12vh;
+    
+    }
+    
 }
 
 /*scrollicon*/
 
 .scrollicon p {
-  margin-left: -27px;
+
   width: 90px;
 }
 @-webkit-keyframes ani-mouse {
@@ -426,10 +1521,11 @@ p{
     transform: translateY(-50%);
     padding-top: 100px;
 }
-.vsebina2{
+.vsebina3{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    width: 100%;
 }
 .visina{
     height: 550px;
@@ -437,6 +1533,9 @@ p{
 
 /*povpraševanje*/
 .povprasevanje{
+    display: none;
+}
+ .povprasevanje{
     width: 40%;
     height: 100%;
     position: absolute;
@@ -476,6 +1575,7 @@ textarea{
     padding: 18px;
     margin-top: 20px;
     font-weight: 300;
+    resize: none;
 }
 textarea:focus{
   outline: none;
@@ -499,7 +1599,7 @@ button:focus{
 button:hover{
     background-color: #ffF;
     color: #00AAAF;
-}
+} 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    #fff;
 }
@@ -518,88 +1618,6 @@ button:hover{
    color:    #fff;
 }
 
-/*slider reference */
-.referenceslide{
-    overflow-x: hidden;
-    
-}
-.bgreference{
-    height: 55%;
-    width: 100%;
-    position: absolute;
-    top: 120px;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-}
- .bgreference img{
-    width: auto;
-    height: 30vh;
-    float: left;
-    max-height: 280px;
-} 
-.bgreference h1{
-    font-weight: 900;
-    color: #002837;
-    font-size: 80px; 
-    margin: 0px;
-
-    
-
-}
- .refnapis{
-    float: left;
-    padding: 10% 0 10% 7%;
-    
-} 
-.crtaref{
-    height: 7px;
-    width: 60%;
-    background-color: #4B88A2;
-    margin: 20px 4px;
-}
-
-.refslider{
-    top:65%;
-    left: 0;
-    background-color: #fff;
-    height: 35%;
-    position: absolute;
-    z-index: 10;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    
-    
-}
-
-.reflogos{
-    width: 80%;
-    margin: 0 10% ;
-    height: 50px;
-    
-}
-
-.refslider img{
-    height: 50px;
-    width: auto;
-    margin: 0 50px;
-}
-.slick-slide{
-    outline: none;
-}
-.slick-prev {
-    left: -150px;
-
-}
-.slick-next {
-    right: -150px;
-    background-color: transparent;
-
-}
 .beloozadje{
     background-color: #00AAAF;
 }
@@ -607,102 +1625,35 @@ button:hover{
 
 /*puscice*/
 
-.arrow-down {
-  width: 0; 
-  height: 10%; 
-  border-left: 60px solid transparent;
-  border-right: 60px solid transparent;
-  z-index: 11;
-  border-top: 60px solid #00AAAF;
-  margin: auto;
-  position: absolute;
-  top: 65%;
-  left: 50%;
+
+
+@media screen and (max-height: 800px) {
+ h1{
+    font-size: 45px !important;
+    margin: 0px !important;
+ }
+ p{
+     font-size: 15px !important;
+ }
+ p.normal{
+    margin: 20px 0 !important;
+    font-size: 15px !important;
+ }
+p.modra{
+    font-size: 13px !important;
+    margin: 20px 0 0 0 !important;
 }
-
-
-/*kontakt*/
+.vsebina3{
+    padding-top: 100px;
+}
+.containermid{
+    width: 670px;
+}
+.kontaktalineja{
+    font-size: 15px !important;
+    margin: 10px 0 !important;
+}
 .kontakt{
-    width: 40%;
-    height: 100%;
-    position: absolute;
-    background-color: #4B88A2;
-    padding: 0 10%;
-    top:0;
-    left: 0;
+        width: 230px;
 }
-.kontakt h1{
-    font-weight: 900;
-    color: #002837;
-    margin: 0px;
-    font-size: 45px;
-}
-.kontakt p{
-    font-weight: 500;
-    color: #002837;
-    margin: 0px;
-    font-size: 18px;
-}
-.kontaktalineja{
-    margin: 40px 0;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 28px;
-}
-.krepko{
-    font-weight: 500;
-}
-.kontakt .crta{
-    background-color: #00AAAF;
-    height: 7px;
-    width: 100%;
-    margin: 20px 0 30px 0;
-}
-.kontakt button{
-   
-}
-#poslji{
-     float: right;
-
-}
-.ikone{
-    height: 25px;
-    width: auto;
-}
-.ikonaplaceholder{
-    width: 40px;
-
-}
-.kontaktinfo{
-    position: relative;
-    top: -38px;
-    left: 60px;
-}
-
-/*media*/
-
-@media screen and (max-width: 1280px) , screen and (max-height: 700px) {
-input{
-
-    padding: 12px;
-    font-size: 13px;
-}
-textarea{
-    padding: 12px;
-    font-size: 13px;
-}
-button{
-    font-size: 15px;
-}
-.kontaktalineja{
-    font-size: 15px;
-    margin: 15px 0;
-}
-.povprasevanje h1{
-    margin-bottom: 0px;
-}
-.visina{
-    height: 462px;
-}
-
 }
