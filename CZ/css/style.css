@@ -1,0 +1,1945 @@
+body{
+    background-color:#002837;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.social_media{
+    margin: 30px 0;
+}
+.social_media img{
+    margin-right: 20px;
+}
+
+.loadbg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    background-color:#002837;
+    overflow: hidden;
+}
+.rotateimganimacija{
+    width: 40px;
+    height: auto;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 101;
+    display: none;
+    
+}
+a, a:hover, a:active{
+    text-decoration: none !important;
+}
+p{
+    line-height: 1.5em;
+}
+.glava{
+    background-color: #002837;
+    height: 0px;
+    z-index: 70;
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+
+}
+.glavatelefon{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 91
+}
+.button-collapse i{
+    color: #00AAAF;
+    padding: 10px;
+    filter: invert(30%);
+
+}
+.narekovaji{
+    display: none;
+}
+
+#menu{
+    top: 0;
+    left:0;
+    right: 0;
+    height: 80px;
+    max-width: 437px;
+    margin: 20px auto  0px auto;
+    z-index: 70;
+    position: fixed;
+    text-align: center;
+    
+}
+/* barve */
+.kontakt .crta{
+    background-color: #4B88A2;
+    max-width: 210px;
+}
+.kontakt h1{
+    color: #00AAAF;
+}
+.kontakt p{
+    color: #4B88A2;
+}
+.onastext{
+    color: #fff;
+}
+
+
+#jezikimenu a{
+    margin: 0 12px;
+    text-align:  center;
+}
+.mobilescrollinfo{
+    text-align: center;
+}
+.container{
+        width: 80%;
+        margin: 0 auto;
+}
+
+ 
+
+.bgsvetlomodra{
+    background-color: #4B88A2;
+}
+
+
+.crtaV{
+    background-color: #4B88A2;
+    height: 7px;
+
+    position: relative;
+    z-index: 1;
+
+}
+.svetlomodra{
+    background-color: #00AAAF;
+    
+}
+
+.svetlomodra .crtaV{
+    width: 17%;
+    
+    margin: 20px 0 30px 45.7%;
+}
+
+
+.posta{
+    height: 30%;
+    position: absolute;
+    margin-top: -150px;
+    top: 50%;
+    left: 0;
+
+}
+.bg{
+
+    background: center center / auto no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.bg2{
+    background: center center / cover no-repeat;
+    height: 100%;
+    width: 100%;
+    
+
+
+}
+
+.vzorec2{
+    width:100%; 
+    height:100%; 
+    background:url(pattern2+.svg) center center no-repeat;
+
+}
+
+
+/*media*/
+/*ogromni*/
+@media all and (min-width: 1281px) { 
+.logo{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 400px;
+   height: 400px;
+   margin-top: -200px; /* Half the height */
+   margin-left: -200px; /* Half the width */
+}
+/*o nas*/
+.svetlomodra h1{
+    font-weight: 900;
+    color: #002837;
+    font-size: 100px; 
+    text-align: center;
+    margin:0px;
+    position: relative;
+    z-index: 1;
+}
+.svetlomodra p{
+    font-weight: 300;
+    width: 40%;
+    margin-left: 45.7%;
+    font-size: 18px;
+   
+}
+.translation{
+    position: absolute;
+    top:40vh;
+    left:-100px;
+    width: auto;
+    height: 80vh;
+    opacity: 0.3;
+    margin-top: -25vh;
+    max-width: 100%;
+    overflow: hidden;
+    
+}
+.scrollicon{
+    position: absolute;
+    bottom: 150px;
+    left: 0;
+    width: 100%;
+    outline:none;
+}
+#jezikimenu{
+    z-index: 70;
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 80px;
+    margin: 20px;
+}
+/*ponudba*/
+.ponudba{
+    width: 40%;
+    float:left;
+}
+.ponudba h1{
+    color: #00AAAF;
+    font-size: 80px;
+    font-weight: 900;
+    margin: 0px;
+}
+.ponudba .normal{
+    font-weight: 400;
+    color: #fff;
+    margin: 40px 0;
+    font-size: 18px;
+}
+.ponudba p{
+    width: 80%;
+}
+.ponudba .crta{
+    height: 7px;
+    background-color: #4B88A2;
+    width: 50%;
+    margin: 20px 0 30px 0;
+}
+.ponudba .modra{
+    color: #00AAAF;
+    font-weight: 300;
+    margin: 40px 0;
+}
+.ponudbaslike{
+    float: right;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+.ponudbaslike img{
+    height: 14vh;
+    width: auto;
+    margin: 2vh 0;
+    max-height: 150px;
+}
+.vsebina2{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 50px;
+}
+
+/*slider reference */
+.referenceslide{
+    overflow-x: hidden;
+    
+}
+.bgreference{
+    height: 55%;
+    width: 100%;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+ .bgreference img{
+    width: auto;
+    height: 30vh;
+    float: left;
+    max-height: 280px;
+} 
+.bgreference h1{
+    font-weight: 900;
+    color: #002837;
+    font-size: 80px; 
+    margin: 0px;
+
+    
+
+}
+ .refnapis{
+    float: left;
+    padding: 10% 0 10% 7%;
+    
+} 
+.crtaref{
+    height: 7px;
+    width: 60%;
+    background-color: #4B88A2;
+    margin: 20px 4px 0 0;
+}
+.containermid{
+        
+        width: 857px;
+        margin: 0 auto;
+}
+.refslider{
+    top:65%;
+    left: 0;
+    background-color: #fff;
+    height: 35%;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    
+    
+    
+}
+
+.reflogos{
+    width: 80%;
+    margin: 0 10% ;
+    height: 50px;
+    
+}
+
+.refslider img{
+    height: 50px;
+    width: auto;
+    margin: 0 50px;
+}
+.slick-slide{
+    outline: none;
+}
+.slick-prev {
+    left: -150px;
+
+}
+.slick-next {
+    right: -150px;
+    background-color: transparent;
+
+}
+.arrow-down {
+  width: 0; 
+  height: 10%; 
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  z-index: 11;
+  border-top: 60px solid #00AAAF;
+  margin-left: -45px;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+}
+/*kontakt*/
+.kontakt{
+
+    
+}
+.fullscreen{
+    
+}
+.kontakt h1{
+    font-weight: 900;
+    margin: 30px 0 0 0 ;
+    font-size: 30px;
+}
+.kontakt p{
+    font-weight: 500;
+    margin: 0px;
+    font-size: 13px;
+}
+.kontaktalineja{
+    margin: 40px 0;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 23px;
+}
+.krepko{
+    font-weight: 500;
+}
+.kontakt .crta{
+    
+    height: 7px;
+    width: 100%;
+    margin: 20px 0 30px 0;
+}
+
+#poslji{
+     float: right;
+
+}
+.ikone{
+    height: 20px;
+    width: auto;
+}
+.ikonaplaceholder{
+    width: 40px;
+
+}
+.kontaktinfo{
+    position: relative;
+    top: -33px;
+    left: 60px;
+}
+/*citat*/
+.citatsvg{
+    position: absolute;
+    top:40vh;
+    left:10%;
+    width: auto;
+    height: 32vh;
+    opacity: 0.3;
+    margin-top: -10vh;
+    max-width: 100%;
+    overflow: hidden;
+    
+    
+}
+.citat{
+   margin-left: 45%;
+   margin-bottom: 150px;
+   
+}
+.kontakt{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+
+.citat h1{
+    color: #00AAAF;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    margin: 0;
+}
+.citat h2{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 65px;
+    color: #4B88A2;
+    margin: 0;
+}
+}
+/*velik*/
+@media all and (min-width: 1025px) and (max-width: 1280px) { 
+.logo{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 400px;
+   height: 400px;
+   margin-top: -200px; /* Half the height */
+   margin-left: -200px; /* Half the width */
+}
+.bg{
+    max-height: 100%;
+    overflow:hidden
+}
+#bgmove{
+    height: 100% !important;
+    overflow:hidden
+}
+.svetlomodra h1{
+    font-weight: 900;
+    color: #002837;
+    font-size: 100px; 
+    text-align: center;
+    margin: 0px;
+    position: relative;
+    z-index: 1;
+}
+.svetlomodra p{
+    font-weight: 300;
+    width: 40%;
+    margin-left: 45.7%;
+    font-size: 18px;
+   
+}
+.scrollicon{
+    position: absolute;
+    bottom: 150px;
+    left: 0;
+    width: 100%;
+    outline:none;
+}
+#jezikimenu{
+    z-index: 70;
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 80px;
+    margin: 20px;
+}
+.translation{
+    position: absolute;
+    top:40vh;
+    left:-100px;
+    width: auto;
+    height: 80vh;
+    opacity: 0.3;
+    margin-top: -25vh;
+    max-width: 100%;
+    
+}
+/*ponudba*/
+.ponudba{
+    width: 40%;
+    float:left;
+}
+.ponudba h1{
+    color: #00AAAF;
+    font-size: 80px;
+    font-weight: 900;
+}
+.ponudba .normal{
+    font-weight: 400;
+    color: #fff;
+    margin: 40px 0;
+    font-size: 18px;
+}
+.ponudba p{
+    width: 80%;
+}
+.ponudba .crta{
+    height: 7px;
+    background-color: #4B88A2;
+    width: 50%;
+    margin: 20px 0 30px 0;
+}
+.ponudba .modra{
+    color: #00AAAF;
+    font-weight: 300;
+    margin: 40px 0;
+}
+.ponudbaslike{
+    float: right;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+.ponudbaslike img{
+    height: 14vh;
+    width: auto;
+    margin: 2vh 0;
+    max-height: 150px;
+}
+.vsebina2{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 50px;
+}
+
+/*slider reference */
+.referenceslide{
+    overflow-x: hidden;
+    
+}
+.bgreference{
+    height: 65%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+ .bgreference img{
+    width: auto;
+    height: 30vh;
+    float: left;
+    max-height: 280px;
+} 
+.bgreference h1{
+    font-weight: 900;
+    color: #002837;
+    font-size: 80px; 
+    margin: 0px;
+
+
+}
+ .refnapis{
+    float: left;
+    padding: 10% 0 10% 7%;
+    
+} 
+.crtaref{
+    height: 7px;
+    width: 60%;
+    background-color: #4B88A2;
+    margin: 20px 4px 0 0;
+}
+.containermid{
+        
+        width: 857px;
+        margin: 0 auto;
+}
+
+.refslider{
+    top:65%;
+    left: 0;
+    background-color: #fff;
+    height: 35%;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    
+    
+}
+
+.reflogos{
+    width: 80%;
+    margin: 0 10% ;
+    height: 50px;
+    
+}
+
+.refslider img{
+    height: 50px;
+    width: auto;
+    margin: 0 50px;
+}
+.slick-slide{
+    outline: none;
+}
+.slick-prev {
+    left: -150px;
+
+}
+.slick-next {
+    right: -150px;
+    background-color: transparent;
+
+}
+.arrow-down {
+  width: 0; 
+  height: 10%; 
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  z-index: 11;
+  border-top: 60px solid #00AAAF;
+  margin-left: -45px;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+}
+/*kontakt*/
+.kontakt{
+   
+    
+}
+.kontakt h1{
+
+    font-weight: 900;
+    margin: 30px 0 0 0 ;
+    font-size: 30px;
+}
+.kontakt p{
+    font-weight: 500;
+    margin: 0px;
+    font-size: 13px;
+}
+.kontaktalineja{
+    margin: 40px 0;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 23px;
+}
+.krepko{
+    font-weight: 500;
+}
+.kontakt .crta{
+
+    height: 7px;
+    width: 100%;
+    margin: 20px 0 30px 0;
+}
+
+#poslji{
+     float: right;
+
+}
+.ikone{
+    height: 25px;
+    width: auto;
+
+}
+.ikonaplaceholder{
+    width: 40px;
+
+}
+.kontaktinfo{
+    position: relative;
+    top: -33px;
+    left: 60px;
+}
+/*citat*/
+.citatsvg{
+    position: absolute;
+    top:40vh;
+    left:100px;
+    width: auto;
+    height: 30vh;
+    opacity: 0.3;
+    margin-top: -5vh;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 400px;
+    
+}
+.citat{
+   margin-left: 45%;
+   margin-bottom: 150px;
+   
+}
+.kontakt{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+
+.citat h1{
+    color: #00AAAF;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    margin: 0;
+}
+.citat h2{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 65px;
+    color: #4B88A2;
+    margin: 0;
+}
+}
+/*srednji*/
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.logo{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 400px;
+   height: 400px;
+   margin-top: -200px; /* Half the height */
+   margin-left: -200px; /* Half the width */
+}
+.bg{
+    
+}
+.bg2{
+    display: none;
+}
+.svetlomodra h1{
+    font-weight: 900;
+    color: #002837;
+    font-size: 100px; 
+    text-align: center;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+.svetlomodra p{
+    font-weight: 300;
+    width: 50%;
+    margin-left: 45.7%;
+    font-size: 18px;
+   
+}
+
+.translation{
+    position: absolute;
+    top:40vh;
+    left:-100px;
+    width: auto;
+    height: 80vh;
+    opacity: 0.3;
+    margin-top: -25vh;
+    max-width: 100%;
+    
+}
+.scrollicon{
+    position: absolute;
+    bottom: 120px;
+    left: 0;
+    width: 100%;
+    outline:none;
+}
+#jezikimenu{
+    z-index: 70;
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 100%;
+}
+#jezikimenu ul{
+    width: 125px;
+    margin: 20px auto;
+}
+.glava{
+    position: absolute;
+}
+/*ponudba*/
+.ponudba{
+    width: 100%;
+
+}
+.ponudba h1{
+    color: #00AAAF;
+    font-size: 80px;
+    font-weight: 900;
+}
+.ponudba .normal{
+    font-weight: 400;
+    color: #fff;
+    margin: 40px 0;
+    font-size: 18px;
+}
+.ponudba p{
+    width: 80%;
+}
+.ponudba .crta{
+    height: 7px;
+    background-color: #4B88A2;
+    width: 50%;
+    margin: 20px 0 30px 0;
+}
+.ponudba .modra{
+    color: #00AAAF;
+    font-weight: 300;
+    margin: 40px 0;
+}
+.ponudbaslike{
+   
+    width: 100%;
+    
+
+}
+.ponudbaslike img{
+    height: 14vh;
+    width: auto;
+    margin: 2vh 0;
+    max-height: 150px;
+    max-width: 100%;
+}
+
+/*slider reference */
+.referenceslide{
+    overflow-x: hidden;
+    
+}
+.bgreference{
+    height: 65%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+ .bgreference img{
+    display: none;
+} 
+.bgreference h1{
+    font-weight: 900;
+    color: #002837;
+    font-size: 80px; 
+    margin: 0px;
+    text-align: center;
+
+    
+
+}
+ .refnapis{
+    width: 100%
+} 
+.crtaref{
+    height: 7px;
+    width: 40%;
+    background-color: #4B88A2;
+    margin: 20px auto;
+}
+
+.refslider{
+    top:65%;
+    left: 0;
+    background-color: #fff;
+    height: 35%;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    
+    
+}
+
+.reflogos{
+    width: 100%;
+    height: 50px;
+    
+}
+
+.refslider img{
+    height: 50px;
+    max-width: 100%;
+    margin: auto;
+}
+.slick-slide{
+    outline: none;
+}
+.slick-prev {
+    left: -150px;
+
+}
+.slick-next {
+    right: -150px;
+    background-color: transparent;
+
+}
+.arrow-down {
+  width: 0; 
+  height: 10%; 
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  z-index: 11;
+  border-top: 60px solid #00AAAF;
+  margin-left: -45px;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+}
+/*kontakt*/
+.kontakt{
+    
+    margin-bottom: -40px;
+}
+.kontakt h1{
+    font-weight: 900;
+    margin: 30px 0 0 0 ;
+    font-size: 30px;
+}
+.kontakt p{
+    font-weight: 500;
+    margin: 0px;
+    font-size: 13px;
+}
+.kontaktalineja{
+    margin: 40px 0;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 23px;
+}
+.krepko{
+    font-weight: 500;
+}
+.kontakt .crta{
+
+    height: 7px;
+    width: 100%;
+    margin: 20px 0 30px 0;
+}
+
+#poslji{
+     float: right;
+
+}
+.ikone{
+    height: 25px;
+    width: auto;
+}
+.ikonaplaceholder{
+    width: 40px;
+
+}
+.kontaktinfo{
+    position: relative;
+    top: -33px;
+    left: 60px;
+}
+/*citat*/
+.citatsvg{
+    position: absolute;
+    top:40vh;
+    left:100px;
+    width: auto;
+    height: 40vh;
+    opacity: 0.3;
+    margin-top: -15vh;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 400px;
+}
+.citat{
+
+margin-bottom: 150px;
+   
+}
+.kontakt{
+}
+
+
+.citat h1{
+    color: #00AAAF;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    margin: 0;
+}
+.citat h2{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 65px;
+    color: #4B88A2;
+    margin: 0;
+}
+}
+/*mali*/
+@media all and (min-width: 480px) and (max-width: 768px) { 
+
+.svetlomodra h1{
+    font-weight: 900;
+    color: #002837;
+    font-size: 100px; 
+    text-align: center;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+.scrollicon{
+    position: absolute;
+    bottom: 120px;
+    left: 0;
+    width: 100%;
+    outline:none;
+}
+#jezikimenu{
+    z-index: 70;
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 100%;
+}
+#jezikimenu ul{
+    width: 123px;
+    margin: 10px auto;
+}
+.glava{
+    position: absolute;
+}
+
+/*ponudba*/
+.ponudba{
+    width: 100%;
+
+}
+.ponudba h1{
+    color: #00AAAF;
+    font-size: 60px;
+    font-weight: 900;
+}
+.ponudba .normal{
+    font-weight: 400;
+    color: #fff;
+    margin: 40px 0;
+    font-size: 18px;
+}
+.ponudba p{
+    width: 80%;
+}
+.ponudba .crta{
+    height: 7px;
+    background-color: #4B88A2;
+    width: 50%;
+    margin: 20px 0 30px 0;
+}
+.ponudba .modra{
+    color: #00AAAF;
+    font-weight: 300;
+    margin: 40px 0;
+}
+.ponudbaslike{
+   
+    width: 100%;
+    
+
+}
+.ponudbaslike img{
+    height: 14vh;
+    width: auto;
+    margin: 2vh 0;
+    max-height: 150px;
+    max-width: 100%;
+}
+
+/*slider reference */
+.referenceslide{
+    overflow-x: hidden;
+    
+}
+.bgreference{
+    height: 65%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+ .bgreference img{
+    display: none;
+} 
+.bgreference h1{
+    font-weight: 900;
+    color: #002837;
+    font-size: 60px; 
+    margin: 0px;
+    text-align: center;
+
+}
+ .refnapis{
+    width: 100%;
+    
+} 
+.crtaref{
+    height: 7px;
+    width: 40%;
+    background-color: #4B88A2;
+    margin: 20px auto;
+}
+
+.refslider{
+    top:65%;
+    left: 0;
+    background-color: #fff;
+    height: 35%;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    
+    
+}
+
+.reflogos{
+    width: 100%;
+    height: 50px;
+    
+}
+
+.refslider img{
+    height: 50px;
+    max-width: 100%;
+    margin: auto;
+}
+.slick-slide{
+    outline: none;
+}
+.slick-prev {
+    left: -150px;
+
+}
+.slick-next {
+    right: -150px;
+    background-color: transparent;
+
+}
+.arrow-down {
+  width: 0; 
+  height: 10%; 
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  z-index: 11;
+  border-top: 60px solid #00AAAF;
+  margin-left: -45px;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+}
+/*kontakt*/
+.kontakt .container{
+    margin: 0px;
+    
+    
+}
+.kontakt h1{
+    font-weight: 900;
+
+    margin: 30px 0 0 0 ;
+    font-size: 45px;
+}
+.kontakt p{
+    font-weight: 500;
+
+    margin: 0px;
+    font-size: 18px;
+}
+.kontaktalineja{
+    margin: 40px 0;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+}
+.krepko{
+    font-weight: 500;
+}
+.kontakt .crta{
+
+    height: 7px;
+    width: 100%;
+    margin: 20px 0 30px 0;
+}
+
+#poslji{
+     float: right;
+
+}
+.ikone{
+    height: 25px;
+    width: auto;
+}
+.ikonaplaceholder{
+    width: 40px;
+
+}
+.kontaktinfo{
+    position: relative;
+    top: -36px;
+    left: 60px;
+}
+/*citat*/
+.citatsvg{
+    display: none;
+}
+.citat{
+    margin-top: 20px;
+    margin-bottom: 50px;
+   
+}
+
+
+.narekovaji{
+    display: initial;
+}
+.citat h1{
+    color: #00AAAF;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    margin: 0;
+}
+.citat h2{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 65px;
+    color: #4B88A2;
+    margin: 0;
+}
+}
+/*najmanjši*/
+@media all and (max-width: 479px) {
+    #fullpage{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .logo{
+        width: 70%;
+        margin: auto;
+        margin-top: -40px;
+        
+    }
+    .svetlomodra h1{
+    font-weight: 900;
+    color: #002837;
+    font-size: 60px; 
+    text-align: left;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+.translationcontainer{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.translation{
+    position: absolute;
+    top:30vh;
+    left:-130px;
+    width: auto;
+    height: 90vh;
+    opacity: 0.3;
+    margin-top: -25vh;
+
+    
+}
+.scrollicon{
+    position: absolute;
+    bottom: 120px;
+    left: 0;
+    width: 100%;
+    outline:none;
+}
+#jezikimenu{
+    z-index: 70;
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+#jezikimenu ul{
+    width: 123px;
+    margin: 10px auto;
+}
+.glava{
+    position: absolute;
+}
+ 
+.svetlomodra p{
+    width: 95%;
+    margin: 0px;
+}
+.svetlomodra .crtaV{
+    width: 40%;
+    margin: 20px 0;
+}
+.bg{
+
+}
+.bg2{
+    display: none;
+}
+/*ponudba*/
+.ponudba{
+    width: 100%;
+
+}
+.ponudba h1{
+    color: #00AAAF;
+    font-size: 48px;
+    font-weight: 900;
+    margin-top: 0px;
+}
+.ponudba .normal{
+    font-weight: 400;
+    color: #fff;
+    margin: 20px 0;
+    font-size: 15px;
+}
+
+.ponudba .crta{
+    height: 7px;
+    background-color: #4B88A2;
+    width: 50%;
+    margin: 20px 0 25px 0;
+}
+.ponudba .modra{
+    color: #00AAAF;
+    font-weight: 300;
+    margin: 20px 0;
+    font-size: 13px;
+}
+.ponudbaslike{
+   
+    width: 100%;
+    margin-top: 50px;
+
+}
+.ponudbaslike img{
+    height: 13vh;
+    width: auto; 
+    max-height: 150px;
+    max-width: 130%;
+    margin-left: -15%;
+}
+
+/*slider reference */
+.referenceslide{
+    overflow-x: hidden;
+    
+}
+.containermid{
+    width: 100% !important;
+}
+.bgreference{
+    height: 55%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+ .bgreference img{
+    display: none;
+} 
+.bgreference h1{
+    font-weight: 900;
+    color: #002837;
+    font-size: 48px; 
+    margin: 0px;
+    text-align: center;
+
+}
+ .refnapis{
+    width: 100%;
+    
+} 
+.crtaref{
+    height: 7px;
+    width: 60%;
+    background-color: #4B88A2;
+    margin: 20px auto;
+}
+
+.refslider{
+    top:55%;
+    left: 0;
+    background-color: #fff;
+    height: 45%;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-top: 50px;
+    
+    
+}
+
+.reflogos{
+    width: 100%;
+    height: 50px;
+    
+}
+
+.refslider img{
+    height: 50px;
+    max-width: 100%;
+    margin: auto;
+}
+.slick-slide{
+    outline: none;
+}
+.slick-prev {
+    left: -150px;
+
+}
+.slick-next {
+    right: -150px;
+    background-color: transparent;
+
+}
+.arrow-down {
+  width: 0; 
+  height: 10%; 
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  z-index: 11;
+  border-top: 60px solid #00AAAF;
+  margin-left: -60px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+}
+.vsebina3{
+    padding-top: 0px !important;
+}
+/*kontakt*/
+
+.kontakt h1{
+    font-weight: 900;
+
+    margin: 30px 0 0 0 ;
+    font-size: 45px;
+}
+.kontakt p{
+    font-weight: 500;
+
+    margin: 0px;
+    font-size: 18px;
+}
+.kontaktalineja{
+    margin: 40px 0;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    
+}
+.krepko{
+    font-weight: 500;
+}
+.kontakt .crta{
+
+    height: 7px;
+    width: 100%;
+    margin: 20px 0 30px 0;
+}
+
+#poslji{
+     float: right;
+
+}
+.ikone{
+    height: 25px;
+    width: auto;
+}
+.ikonaplaceholder{
+    width: 40px;
+
+}
+.kontaktinfo{
+    position: relative;
+    top: -38px;
+    left: 60px;
+}
+/*citat*/
+.citatsvg{
+    position: absolute;
+    top:40vh;
+    left:100px;
+    width: auto;
+    height: 40vh;
+    opacity: 0.3;
+    margin-top: -15vh;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 400px;
+    display: none;
+}
+.citat{
+   
+   margin: 0px 0 50px 0;
+   
+}
+.textcitat h1{
+    line-height: 32px !important;
+}
+.kontakt .container{
+    margin: 0px;
+    width: 100%;
+
+    
+}
+.kontakt{
+    margin-bottom: -40px;
+}
+.narekovaji{
+    display: initial;
+}
+
+
+.citat h1{
+    color: #00AAAF;
+    font-weight: 700;
+    font-size: 25px !important;
+    line-height: 30px;
+    margin: 0;
+}
+.citat h2{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 65px;
+    color: #4B88A2;
+    margin: 0;
+}
+
+}
+
+/*iphone5*/
+@media all and (max-width: 360px) {
+    .ponudbaslike img{
+    height: 12vh;
+    
+    }
+
+    
+    
+}
+/*ipadpro*/
+
+@media all and (width:1024px ) and (height: 1366px) {
+
+    
+    .kontakt{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        
+    }
+    .citatsvg{
+        display: none;
+    }
+    .narekovaji{
+        display: initial;
+    }
+}
+@media all and (width:800px ) and (height: 1280px) {
+    
+        .citatsvg{
+            display: none;
+        }
+        .narekovaji{
+            display: initial;
+        }
+        .kontakt .container{
+            margin: 0px;
+            
+        }
+    }
+
+@media all and (width:1280px ) and (height: 950px) {
+    .citatsvg{
+        margin-top: -10vh;
+    }
+}        
+/*scrollicon*/
+
+.scrollicon p {
+
+  width: 90px;
+}
+@-webkit-keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+@-moz-keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+@keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+ .scroll-btn {
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+.scroll-btn > * {
+	display: inline-block;
+	line-height: 18px;
+	font-size: 13px;
+	font-weight: normal;
+	color: #7f8c8d;
+	color: #ffffff;
+	font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	letter-spacing: 2px;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *.active {
+	color: #ffffff;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *:active,
+.scroll-btn > *.active {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+.scroll-btn .mouse {
+	position: relative;
+	display: block;
+	width: 35px;
+	height: 55px;
+	margin: 0 auto 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 3px solid white;
+    border-radius: 23px;
+    outline:none;
+}
+.scroll-btn .mouse > * {
+	position: absolute;
+	display: block;
+	top: 29%;
+	left: 50%;
+	width: 8px;
+	height: 8px;
+	margin: -4px 0 0 -4px;
+	background: white;
+	border-radius: 50%;
+	-webkit-animation: ani-mouse 2.5s linear infinite;
+	-moz-animation: ani-mouse 2.5s linear infinite;
+	animation: ani-mouse 2.5s linear infinite;
+}
+.scroll-btn p{ 
+    color: white;
+
+}
+.sectopn{
+    position: relative;
+}
+.vsebina{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-top: 100px;
+}
+.vsebina3{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+.visina{
+    height: 550px;
+}
+
+/*povpraševanje*/
+.povprasevanje{
+    display: none;
+}
+ .povprasevanje{
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 40%;
+    padding: 0 15%;
+
+}
+.povprasevanje h1{
+    font-size: 45px;
+    color: #00AAAF;
+    font-weight: 900;
+    margin: 0px 0 20px 0;
+    line-height: 60px;
+    
+}
+input{
+    background-color: #4B88A2;
+    color: white;
+    padding: 18px;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 20px;
+    font-weight: 300;
+    
+}
+input:focus{
+  outline: none;
+}
+textarea{
+    background-color: #4B88A2;
+    color: white;
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    padding: 18px;
+    margin-top: 20px;
+    font-weight: 300;
+    resize: none;
+}
+textarea:focus{
+  outline: none;
+}
+button{
+     box-sizing: border-box;
+    
+     border: none;
+     background-color: #00AAAF;
+     color: white;
+     padding: 10px 50px;
+     border-radius: 20px;
+     font-weight: 500;
+     font-size: 18px;
+     margin: 20px 0;
+}
+button:focus{
+    background-color: #00AAAF;
+}
+
+button:hover{
+    background-color: #ffF;
+    color: #00AAAF;
+} 
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #fff;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #fff;
+}
+
+.beloozadje{
+    background-color: #00AAAF;
+}
+
+
+/*puscice*/
+
+
+
+@media screen and (max-height: 800px) {
+ h1{
+    font-size: 40px !important;
+    margin: 0px !important;
+ }
+ p{
+     font-size: 15px !important;
+ }
+ p.normal{
+    margin: 20px 0 !important;
+    font-size: 15px !important;
+ }
+p.modra{
+    font-size: 15px !important;
+    margin: 20px 0 0 0 !important;
+}
+.vsebina3{
+    padding-top: 100px;
+}
+.containermid{
+    width: 670px;
+}
+.kontaktalineja{
+    font-size: 13px !important;
+    margin: 10px 0 !important;
+}
+.kontakt h1{
+    font-size: 30px !important;
+}
+.textcitat h1{
+    line-height: 48px;
+}
+.citatsvg{
+    top: 35vh;
+}
+
+}
