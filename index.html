@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="plugini/slick//slick.css">
     <link rel="stylesheet" href="plugini/slick/slick-theme.css">
-
     <link rel="stylesheet" href="css/style.css">
     <!--Fonti-->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
@@ -20,6 +19,8 @@
     <meta name="mobile-web-app-capable" content="yes">
     <!--jezik-->
     <meta charset="utf-8" />
+    <!--ikona-->
+    <link rel="icon" href="img/Logo-16x16.png">
     <title>Bohemia</title>
 </head>
 
@@ -100,7 +101,7 @@
                 <div class="ponudba">
                     <h1>PONUDBA</h1>
                     <div class="crta"></div>
-                    <p class="normal">Nudimo prevode z najrazličnejših področij v sledečih jezikovnih kombinacijah.</p>
+                    <p class="normal">Nudimo prevode z najrazličnejših področij v navedenih jezikovnih kombinacijah.</p>
                     <p class="normal">Tolmačenje ponujamo v jezikovnih kombinacijah češčina-slovenščina ter angleščina-srbščina.</p>
                     <p class="modra">*Poleg navedenega uredimo tudi prevode drugih kombinacij po želji stranke. Pri svojem delu uporabljamo
                         prevajalska orodja (CAT tools), kot na primer Memsource ali SDL Trados Studio ipd.<br><br>**Ena prevajalska
@@ -202,7 +203,13 @@
                                 <div class="col m12 l3 s12">
                                 <h1>KONTAKT</h1>
                                 <p>Na voljo smo vsak dan v tednu.</p>
-                                <div class="crta"></div>
+                                <div class="social_media">
+                                    <div class="">
+                                        <a href="#"><img class="ikone" src="img/ikone/facebook.svg" alt=""></a>
+                                        <a href="#"><img class="ikone" src="img/ikone/twitter.svg" alt=""></a>
+                                        <a href="#"><img class="ikone" src="img/ikone/linkedin.svg" alt=""></a>
+                                    </div>                              
+                                </div>
                             </div>
                                 <div class="col m12 l3 s12 kontaktalineja">
                                     <div class="ikonaplaceholder"><img class="ikone" src="img/ikone/placeholder.svg" alt=""></div>
@@ -227,19 +234,6 @@
                 <div class="translationcontainer">
                         <img class="citatsvg" src="img/citat.svg" alt="">
                 </div> 
-                <!-- <div class="povprasevanje">
-                    <div class="vsebina">
-                        <div class="visina">
-                            <h1>POŠLJITE <br>POVPRAŠEVANJE</h1>
-                            <form action="">
-                                <input placeholder="Ime in Priimek" type="text">
-                                <input placeholder="E-mail" type="email">
-                                <textarea placeholder="Sporočilo" name="" id="" cols="30" rows="5"></textarea>
-                                <button id="poslji">POŠLJI</button>
-                            </form>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
 
@@ -260,38 +254,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
     <script type="text/javascript" src="plugini/slick/slick.js"></script>
 
-
-    <script>
-
-    </script>
-    <!-- <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-
-    </script> -->
     <script>
         $(document).ready(function () {
-            // $(".button-collapse").sideNav({
-            //     closeOnClick: true,
-
-            // });
-
             $(".logo").hide(0);
             $(".loadbg").delay(300).fadeOut(500, function () {
                 $(".logo").fadeIn(3000);
             });
-
-
-
-
-
-
         })
         $(window).resize(function () {
             $(".bg > .ibg-bg").css({
@@ -501,31 +469,18 @@
 
                         //after leaving section 1
                         if (index == 1 && direction == 'down') {
-
                             $('.scrollicon').fadeOut("slow").addClass('hide');
-                            
-
-
                         }
-
                         else if (index == 2 && direction == 'up') {
-
-
                             $('.scrollicon').fadeIn("slow").removeClass('hide');
-                            
-
                         }
-
-
                     }
-
-
 
                 });
                 $(".bg").interactive_bg({
+                    
                 });
                 $(".reflogos").slick({
-
                     infinite: true,
                     slidesToShow: 1,
                     slidesToScroll: 1,
