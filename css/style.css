@@ -4,7 +4,12 @@ body{
     font-family: 'Montserrat', sans-serif;
     
 }
-
+.social_media{
+    margin: 30px 0;
+}
+.social_media img{
+    margin-right: 20px;
+}
 
 .loadbg{
     position: fixed;
@@ -76,35 +81,21 @@ p{
     background-color: #4B88A2;
     max-width: 210px;
 }
-.kontakt h1,p{
+.kontakt h1{
     color: #00AAAF;
+}
+.kontakt p{
+    color: #4B88A2;
 }
 .onastext{
     color: #fff;
 }
 
 
-
-
 #jezikimenu a{
     margin: 0 12px;
     text-align:  center;
 }
-/* #jezikimenumobile{
-    position: absolute;
-    bottom: 50;
-    left: 0;
-    right: 0;
-    width: 180px;
-    margin: auto;
-    text-align: center;
-    
-
-}
-#jezikimenumobile a.menu__link{
-    width: 20px;
-    text-align: center;
-} */
 .mobilescrollinfo{
     text-align: center;
 }
@@ -120,11 +111,6 @@ p{
 }
 
 
-
-
- /* #fullpage{
-    top:-80;
-}  */
 .crtaV{
     background-color: #4B88A2;
     height: 7px;
@@ -138,16 +124,11 @@ p{
     
 }
 
-
-
 .svetlomodra .crtaV{
     width: 17%;
     
     margin: 20px 0 30px 45.7%;
 }
-
-
-
 
 
 .posta{
@@ -187,9 +168,6 @@ p{
 /*media*/
 /*ogromni*/
 @media all and (min-width: 1281px) { 
-/* .kontakt{
-    padding: 0 10% 0 25vh !important;
-} */
 .logo{
    position: absolute;
    top: 50%;
@@ -630,7 +608,6 @@ p{
     font-size: 80px; 
     margin: 0px;
 
-    
 
 }
  .refnapis{
@@ -1301,16 +1278,6 @@ margin-bottom: 150px;
 }
 /*citat*/
 .citatsvg{
-    /* position: absolute;
-    top:20vh;
-    left:100px;
-    width: auto;
-    height: 40vh;
-    opacity: 0.2;
-    margin-top: -15vh;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 400px; */
     display: none;
 }
 .citat{
