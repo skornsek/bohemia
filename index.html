@@ -190,17 +190,18 @@
         <div class="section">
             <div class="container fullscreen">
                 <div class="citat">
-                    
+
                     <div class="textcitat">
-                        <h1> <span class="narekovaji">"</span>Some translators turn an author's words from gold to stone, others from stone to gold.<span class="narekovaji">"</span></h1>
+                        <h1> <span class="narekovaji">"</span>Some translators turn an author's words from gold to stone, others
+                            from stone to gold.<span class="narekovaji">"</span></h1>
                         <h2>- Terri Guillemets -</h2>
                     </div>
 
                 </div>
                 <div class="kontakt">
-                        <div class="container">
-                            <div class="row" style="margin-bottom:0px;">
-                                <div class="col m12 l3 s12">
+                    <div class="container">
+                        <div class="row" style="margin-bottom:0px;">
+                            <div class="col m12 l3 s12">
                                 <h1>KONTAKT</h1>
                                 <p>Na voljo smo vsak dan v tednu.</p>
                                 <div class="social_media">
@@ -208,32 +209,32 @@
                                         <a href="#"><img class="ikone" src="img/ikone/facebook.svg" alt=""></a>
                                         <a href="#"><img class="ikone" src="img/ikone/twitter.svg" alt=""></a>
                                         <a href="#"><img class="ikone" src="img/ikone/linkedin.svg" alt=""></a>
-                                    </div>                              
-                                </div>
-                            </div>
-                                <div class="col m12 l3 s12 kontaktalineja">
-                                    <div class="ikonaplaceholder"><img class="ikone" src="img/ikone/placeholder.svg" alt=""></div>
-                                    <div class="kontaktinfo"> <span class="krepko">Prevodi Bohemia</span><br>Timotej Margon s.p.<br>Cesta XIV divizije
-                                        9
-                                        <br>3320 Velenje<br>Slovenija
                                     </div>
                                 </div>
-                                <div class="col m12 l3 s12 kontaktalineja">
-                                    <div class="ikonaplaceholder"><img class="ikone" src="img/ikone/mail.svg" alt=""></div>
-                                    <div class="kontaktinfo"> prevodi@bohemia.si</div>
-                                </div>
-                                <div class="col m12 l3 s12 kontaktalineja">
-                                    <div class="ikonaplaceholder"><img class="ikone" src="img/ikone/phone-call.svg" alt=""></div>
-                                    <div class="kontaktinfo">+386 40 819 891</div>
+                            </div>
+                            <div class="col m12 l3 s12 kontaktalineja">
+                                <div class="ikonaplaceholder"><img class="ikone" src="img/ikone/placeholder.svg" alt=""></div>
+                                <div class="kontaktinfo"> <span class="krepko">Prevodi Bohemia</span><br>Timotej Margon s.p.<br>Cesta XIV divizije
+                                    9
+                                    <br>3320 Velenje<br>Slovenija
                                 </div>
                             </div>
-    
+                            <div class="col m12 l3 s12 kontaktalineja">
+                                <div class="ikonaplaceholder"><img class="ikone" src="img/ikone/mail.svg" alt=""></div>
+                                <div class="kontaktinfo"> prevodi@bohemia.si</div>
+                            </div>
+                            <div class="col m12 l3 s12 kontaktalineja">
+                                <div class="ikonaplaceholder"><img class="ikone" src="img/ikone/phone-call.svg" alt=""></div>
+                                <div class="kontaktinfo">+386 40 819 891</div>
+                            </div>
                         </div>
+
+                    </div>
                 </div>
-                
+
                 <div class="translationcontainer">
-                        <img class="citatsvg" src="img/citat.svg" alt="">
-                </div> 
+                    <img class="citatsvg" src="img/citat.svg" alt="">
+                </div>
             </div>
         </div>
 
@@ -286,14 +287,14 @@
                 $("#fullpage").show();
                 $(".scrollicon").show();
             }
-            
+
         }
 
         $(document).ready(function () {
 
             var visina = $(window).height();
             var sirina = $(window).width();
-               
+
             if (sirina > 1024) {
                 //Add your javascript for large screens here
                 $('#fullpage').fullpage({
@@ -377,17 +378,17 @@
                 });
             }
             else if (sirina >= 768 && sirina <= 1024) {
-                
+
                 $(window).resize(function () {
                     $(window).resizeanimation();
-                    
-                    
+                    location.reload();
+
                 });
-                $(document).ready(function(){
+                $(document).ready(function () {
                     $(window).resizeanimation();
-                    
+
                 })
-                
+
                 //Add your javascript for small screens here
                 $('#ponudba').addClass('fp-auto-height');
                 $('#jezikimenu').removeClass('hide');
@@ -443,15 +444,18 @@
 
             }
             else {
+                $("html, body, #fullpage").css({
+                    height: $(window).height()
+                });
                 $(window).resize(function () {
                     $(window).resizeanimation();
                     location.reload();
-                    
-                   
+
+
                 });
-                $(document).ready(function(){
+                $(document).ready(function () {
                     $(window).resizeanimation();
-                    
+
                 })
 
 
@@ -478,7 +482,7 @@
 
                 });
                 $(".bg").interactive_bg({
-                    
+
                 });
                 $(".reflogos").slick({
                     infinite: true,
