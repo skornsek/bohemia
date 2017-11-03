@@ -444,20 +444,16 @@
 
             }
             else {
-                $("html, body, #fullpage").css({
-                    height: $(window).height()
-                });
+
                 $(window).resize(function () {
                     $(window).resizeanimation();
-                    location.reload();
-
+                   
 
                 });
                 $(document).ready(function () {
                     $(window).resizeanimation();
 
                 })
-
 
                 $('#ponudba').addClass('fp-auto-height');
                 $('#jezikimenu').removeClass('hide');
